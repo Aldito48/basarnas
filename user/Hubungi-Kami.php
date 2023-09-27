@@ -49,7 +49,32 @@
       </div>
     </nav>
     <!-- End Navbar -->
-
+    <!-- Start Form -->
+    <form method="POST" action="prosesForm.php">
+                <div class="wrapper">
+                    <div class="title">
+                        Hubungi Kami
+                    </div>
+                    <div class="form fw-bolder">
+                        <div class="input_field">
+                            <label for="Nama">Nama Lengkap</label>
+                            <input type="text" id="Nama" name="Nama" class="input" required autofocus>
+                        </div>
+                        <div class="input_field">
+                            <label for="Email">Email</label>
+                            <input type="text" id="Email" name="Email" class="input" required>
+                        </div>
+                        <div class="input_field">
+                            <label for="Pesan">Pesan</label>
+                            <textarea id="Pesan" name="Pesan" class="textarea"></textarea>
+                        </div>
+                        <div class="input_field">
+                            <input type="submit" value="Kirim" class="btn" name="submit">
+                        </div>
+                    </div>
+                </div>
+            </form>
+    <!-- End Form -->
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>

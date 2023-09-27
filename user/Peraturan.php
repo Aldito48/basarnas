@@ -49,7 +49,24 @@
       </div>
     </nav>
     <!-- End Navbar -->
-
+    <!-- Start Peraturan -->
+    <h4 class="mt fw-light">BASARNAS KOTA MEDAN</h4>
+    <h1 class="tittle fw-bolder">Peraturan Perasipan</h1>
+    <div class="container">
+      <div class="box">
+          <div class="post-tittle">
+            <h5><i class="bi bi-x-diamond-fill"></i></h5>
+              <div class="post">
+                <h2>JUDUL PERATURAN</h2>
+                <h5>KETERANGAN</h5>
+                <a href="" class="btn read-more">Download</a>
+              </div>
+          </div>
+      </div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <!-- End Peraturan -->
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>

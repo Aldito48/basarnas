@@ -49,7 +49,10 @@
       </div>
     </nav>
     <!-- End Navbar -->
-
+    <!-- ViMi Start -->
+    <h4 class="mt fw-light">BASARNAS KOTA MEDAN</h4>
+    <h1 class="tittle-1 fw-semibold">Visi & Misi Arsip Kansar Medan</h1>
+    <!-- ViMi End -->
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
