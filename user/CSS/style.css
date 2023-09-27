@@ -1,9 +1,8 @@
 :root {
-  --color-default: #008307;
+  --color-default: #00a0fd;
   --color-body: #ffffff;
-  --color-first: #01a701;
   --color-black: #000000;
-  --color-light: #ffffffdc;
+  --color-light: #b6b6b6a4;
 }
 
 /*Home*/
@@ -14,12 +13,12 @@
 }
 
 /* Navbar */
-.navbar {
-  background: var(--color-default);
+.navbar{
+    background-color: var(--color-light);
 }
-.navbar .nav-item .nav-link {
-  color: var(--color-body);
-}
-.navbar .nav-item .nav-link:hover {
+.navbar .navbar-nav .nav-link {
   color: var(--color-black);
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--color-default);
 }
