@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/stylePublikasi.css" />
 
     <title>ANRI | Publikasi</title>
   </head>
@@ -49,6 +49,36 @@
       </div>
     </nav>
     <!-- End Navbar -->
+    <!-- Start -->
+    <!-- End -->
+
+    <!-- Start Gallery -->
+    <section id="galeri">
+
+    <div class="container">
+      <h1>DOKUMENTASI GALERI</h1>
+      <div class="top-content">
+        <h3>Foto Galeri</h3>
+        <label>Basarnas Kota Medan</label>
+      </div>
+      <div class="photo-gallery">
+        <div class="pic place1">
+          <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg">
+        </div>
+        <div class="pic place1">
+          <img src="https://img.freepik.com/premium-photo/beautiful-mountain-range-reflects-tranquil-water-generative-ai_188544-9117.jpg">
+        </div>
+        <div class="pic place2">
+          <img src="https://img.freepik.com/free-photo/natures-beauty-reflected-tranquil-mountain-waters-generative-ai_188544-7867.jpg">
+        </div>
+        <div class="pic place">
+          <img src="https://img.freepik.com/premium-photo/foggy-mountain-lake-with-reflections-surrounding-peaks-created-with-generative-ai_419341-59257.jpg">
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- End Gallery -->
+
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
