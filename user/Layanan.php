@@ -14,7 +14,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="CSS/style.css" />
 
-    <title>ANRI | Publikasi</title>
+    <title>ANRI | Layanan</title>
   </head>
   <body>
     <!-- Start Navbar -->
@@ -29,20 +29,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="Beranda.html">Beranda</a>
+          <li class="nav-item">
+              <a class="nav-link" href="Beranda.php">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Publikasi.html">Publikasi</a>
+              <a class="nav-link" href="Publikasi.php">Publikasi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Layanan.html">Layanan</a>
+              <a class="nav-link" href="Layanan.php">Layanan</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Peraturan.html">Peraturan</a>
+              <a class="nav-link" href="Peraturan.php">Peraturan</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Hubungi-Kami.html">Hubungi Kami</a>
+              <a class="nav-link" href="Hubungi-Kami.php">Hubungi Kami</a>
             </li>
           </ul>
         </div>
