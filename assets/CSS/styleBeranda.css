@@ -23,7 +23,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: none;
+  background: rgba(0, 0, 0, 0.5);
   padding: 0 100px;
   transition: 0.6s;
 }
@@ -204,11 +204,22 @@ header .navigation .menu{
   display: flex;
   justify-content: space-between;
 }
+.slider .buttons h1{
+  color: var(--color-default);
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--color-box);
+  padding: 5px 30px 5px 30px;
+  margin: 0 0 50px 0;
+  border-radius: 50px;
+}
 .slider .buttons button{
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #fff5;
+  background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   border: none;
   font-family: monospace;
@@ -232,12 +243,13 @@ header .navigation .menu{
   list-style: none;
   width: 10px;
   height: 10px;
-  background-color: var(--color-default);
+  background-color: var(--color-body);
   margin: 10px;
   border-radius: 20px;
   transition: 0.5s;
 }
 .slider .dots li.active{
+  background-color: var(--color-default);
   width: 30px;
 }
 @media(max-width: 1060px){
@@ -249,6 +261,9 @@ header .navigation .menu{
     width: 1060px;
     height: 100%;
     object-fit: cover;
+  }
+  .slider .buttons h1{
+    font-size: 30px;
   }
 }
 @media(max-width: 768px){
@@ -262,5 +277,8 @@ header .navigation .menu{
     max-width: 100vw;
     height: 100%;
     object-fit: cover;
+  }
+  .slider .buttons h1{
+    font-size: 20px;
   }
 }

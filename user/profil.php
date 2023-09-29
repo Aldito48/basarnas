@@ -30,10 +30,10 @@
             <li class="menu-item">
               <a class="sub-btn">Profil <i class="fas fa-angle-down"></i></a>
                 <ul class="sub-menu">
-                    <li class="sub-item"><a href="profil.php">Visi & Misi</a></li>
-                    <li class="sub-item"><a href="#">Tugas Pokok dan Fungsi</a></li>
-                    <li class="sub-item"><a href="#">Struktur Organisasi</a></li>
-                    <li class="sub-item"><a href="#">Profil Pengolah</a></li>
+                  <li class="sub-item"><a href="profil.php#">Visi & Misi</a></li>
+                  <li class="sub-item"><a href="profil.php#">Tugas Pokok dan Fungsi</a></li>
+                  <li class="sub-item"><a href="profil.php#">Struktur Organisasi</a></li>
+                  <li class="sub-item"><a href="profil.php#">Profil Pengolah</a></li>
                 </ul>
             </li>
             <li class="menu-item">
@@ -58,31 +58,37 @@
       </header>
     <!-- End Navbar -->
 
+    <!-- Start ViMi -->
+    <section class="vimi">
+      
+    </section>
+    <!-- End ViMi -->
+
     <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <!-- CDNS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <!-- Toggle -->
-    <script type="text/javascript">
-      $(document).ready(function(){
-        // toggle sub-menus
-        $(".sub-btn").click(function(){
-          $(this).next(".sub-menu").slideToggle();
+      <script type="text/javascript">
+        $(document).ready(function(){
+          // toggle sub-menus
+          $(".sub-btn").click(function(){
+            $(this).next(".sub-menu").slideToggle();
+          });
         });
-      });
 
-      // Responsive Nav Menu
-      var menu = document.querySelector(".menu");
-      var menuBtn = document.querySelector(".menu-btn");
-      var closeBtn = document.querySelector(".close-btn");
+        // Responsive Nav Menu
+        var menu = document.querySelector(".menu");
+        var menuBtn = document.querySelector(".menu-btn");
+        var closeBtn = document.querySelector(".close-btn");
 
-      menuBtn.addEventListener("click", () => {
-        menu.classList.add("active")
-      })
-      closeBtn.addEventListener("click", () => {
-        menu.classList.remove("active")
-      })
-    </script>
+        menuBtn.addEventListener("click", () => {
+          menu.classList.add("active")
+        })
+        closeBtn.addEventListener("click", () => {
+          menu.classList.remove("active")
+        })
+      </script>
   </body>
 </html>
