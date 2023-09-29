@@ -15,9 +15,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../assets/CSS/stylePeraturan.css" />
+    <link rel="stylesheet" href="../assets/CSS/styleGaleri.css" />
+    <link rel="stylesheet" href="../assets/CSS/lightbox.css"/>
+    
 
-    <title>ANRI | Peraturan</title>
+    <title>ANRI | Publikasi</title>
   </head>
   <body>
     <!-- Start Navbar -->
@@ -57,28 +59,49 @@
         <div class="menu-btn"></div>
       </header>
     <!-- End Navbar -->
-    <!-- Start Peraturan -->
-      <h1 class="tittle fw-bolder">Peraturan Arsip <br> Kantor Pencarian dan Pertolongan Kelas A Medan</h1>
-        <div class="container">
-          <div class="box">
-              <div class="post-tittle">
-                <h5><i class="bi bi-x-diamond-fill"></i></h5>
-                  <div class="post">
-                    <h2>JUDUL PERATURAN</h2>
-                    <h5>KETERANGAN</h5>
-                    <a href="" class="btn read-more">Download</a>
-                  </div>
-              </div>
-          </div>
-        <div class="box"></div>
-        <div class="box"></div>
+
+    <!-- Start Gallery -->
+      <section id="galeri">
+
+      <div class="container"> 
+        <h1>Dokumentasi Arsip Kantor Pencarian dan Pertolongan Kelas A Medan</h1>
+        <div class="top-content">
+          <h3>Foto Galeri</h3>
+          <label>DOKUMENTASI GALERI</label>
+        </div>
+        <div class="photo-gallery">
+          <a href="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" data-lightbox="models" data-title="Caption1">
+            <div class="pic place">
+                <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg">
+            </div>
+          </a>
+          <a href="https://img.freepik.com/premium-photo/beautiful-mountain-range-reflects-tranquil-water-generative-ai_188544-9117.jpg" data-lightbox="models" data-title="Caption2">
+            <div class="pic place">
+              <img src="https://img.freepik.com/premium-photo/beautiful-mountain-range-reflects-tranquil-water-generative-ai_188544-9117.jpg">
+            </div>
+          </a>
+          <a href="https://img.freepik.com/free-photo/natures-beauty-reflected-tranquil-mountain-waters-generative-ai_188544-7867.jpg" data-lightbox="models" data-title="Caption3">
+            <div class="pic place">
+              <img src="https://img.freepik.com/free-photo/natures-beauty-reflected-tranquil-mountain-waters-generative-ai_188544-7867.jpg">
+            </div>
+          </a>
+          <a href="https://img.freepik.com/premium-photo/foggy-mountain-lake-with-reflections-surrounding-peaks-created-with-generative-ai_419341-59257.jpg" data-lightbox="models" data-title="Caption4">
+            <div class="pic place">
+              <img src="https://img.freepik.com/premium-photo/foggy-mountain-lake-with-reflections-surrounding-peaks-created-with-generative-ai_419341-59257.jpg">
+            </div>
+          </a>
+        </div>
       </div>
-    <!-- End Peraturan -->
+      </section>
+    <!-- End Gallery -->
+
+
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- Lightbox -->
+    <script src="../assets/js/lightbox-plus-jquery.js"></script>
     <!-- CDNS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
     <!-- Toggle -->
     <script type="text/javascript">
       $(document).ready(function(){

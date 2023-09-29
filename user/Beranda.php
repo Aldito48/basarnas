@@ -11,49 +11,109 @@
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <!-- CDNS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
     <!-- CSS -->
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="../assets/CSS/styleBeranda.css" />
 
     <title>ANRI | Beranda</title>
   </head>
   <body>
     <!-- Start Navbar -->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="../assets/img/anri.jpeg" alt="Logo" width="50" height="35" class="d-inline-block align-text-top rounded-circle" />
-          Arsip Nasional RI
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="Beranda.php">Beranda</a>
+      <header>
+        <a href="" class="logo"><img src="../assets/img/sar nasional.jpeg" alt="Logo" width="40" height="40" class="d-inline-block rounded-circle" /> <img src="../assets/img/basarnas.png" alt="Logo" width="40" height="42" class="d-inline-block" /> Basarnas</a>
+        <div class="navigation">
+          <ul class="menu">
+            <div class="close-btn"></div>
+            <li class="menu-item fw-bold"><a href="Beranda.php">Beranda</a></li>
+            <li class="menu-item fw-bold">
+              <a class="sub-btn">Profil <i class="fas fa-angle-down"></i></a>
+                <ul class="sub-menu">
+                  <li class="sub-item"><a href="profil.php">Visi & Misi</a></li>
+                  <li class="sub-item"><a href="#">Tugas Pokok dan Fungsi</a></li>
+                  <li class="sub-item"><a href="#">Struktur Organisasi</a></li>
+                  <li class="sub-item"><a href="#">Profil Pengolah</a></li>
+                </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Publikasi.php">Publikasi</a>
+            <li class="menu-item fw-bold">
+              <a class="sub-btn">Publikasi <i class="fas fa-angle-down"></i></a>
+                <ul class="sub-menu">
+                  <li class="sub-item"><a href="AK.php">Akuntabilitas Kinerja</a></li>
+                  <li class="sub-item"><a href="Galeri.php">Galeri</a></li>
+                </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Layanan.php">Layanan</a>
+            <li class="menu-item fw-bold">
+              <a class="sub-btn">Layanan <i class="fas fa-angle-down"></i></a>
+                <ul class="sub-menu">
+                  <li class="sub-item"><a href="P-Arsip.php">Peminjaman Arsip</a></li>
+                  <li class="sub-item"><a href="D-Arsip.php">Daftar Arsip</a></li>
+                </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Peraturan.php">Peraturan</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Hubungi-Kami.php">Hubungi Kami</a>
-            </li>
+            <li class="menu-item fw-bold"><a href="Peraturan.php">Peraturan</a></li>
+            <li class="menu-item fw-bold"><a href="Hubungi-kami.php">Hubungi Kami</a></li>
           </ul>
         </div>
-      </div>
-    </nav>
+        <div class="menu-btn"></div>
+      </header>
     <!-- End Navbar -->
-    <!-- ViMi Start -->
-    <h4 class="mt fw-light">BASARNAS KOTA MEDAN</h4>
-    <h1 class="tittle-1 fw-semibold">Visi & Misi Arsip Kansar Medan</h1>
-    <!-- ViMi End -->
+
+    <!-- Start Slide -->
+      <section class="slide">
+        <div class="slider">
+            <div class="list">
+                <div class="item">
+                    <img src="../assets/img/wrap1.jpeg" alt="">
+                </div>
+                <div class="item">
+                    <img src="../assets/img/wrap2.jpeg" alt="">
+                </div>
+                <div class="item">
+                    <img src="../assets/img/wrap3.jpeg" alt="">
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+      </section>
+    <!-- End Slide -->
+
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <!-- CDNS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Toggle -->
+    <script type="text/javascript">
+      $(document).ready(function(){
+        // toggle sub-menus
+        $(".sub-btn").click(function(){
+          $(this).next(".sub-menu").slideToggle();
+        });
+      });
+
+      // Responsive Nav Menu
+      var menu = document.querySelector(".menu");
+      var menuBtn = document.querySelector(".menu-btn");
+      var closeBtn = document.querySelector(".close-btn");
+
+      menuBtn.addEventListener("click", () => {
+        menu.classList.add("active")
+      })
+      closeBtn.addEventListener("click", () => {
+        menu.classList.remove("active")
+      })
+    </script>
+
+    <!-- Slide -->
+    <script src="../assets/js/slide.js"></script>
   </body>
 </html>

@@ -15,9 +15,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../assets/CSS/stylePeraturan.css" />
+    <link rel="stylesheet" href="../assets/CSS/styleD-Arsip.css" />
 
-    <title>ANRI | Peraturan</title>
+    <title>ANRI | Layanan</title>
   </head>
   <body>
     <!-- Start Navbar -->
@@ -33,7 +33,7 @@
                     <li class="sub-item"><a href="profil.php">Visi & Misi</a></li>
                     <li class="sub-item"><a href="#">Tugas Pokok dan Fungsi</a></li>
                     <li class="sub-item"><a href="#">Struktur Organisasi</a></li>
-                    <li class="sub-item"><a href="#">Profil Pengolah</a></li>
+                    <li class="sub-item"><a href="#">Profil Pengolah</a></li>>
                 </ul>
             </li>
             <li class="menu-item">
@@ -44,7 +44,7 @@
                 </ul>
             </li>
             <li class="menu-item">
-              <a class="sub-btn">Layanan <i class="fas fa-angle-down"></i></a>
+              <a class="sub-btn"">Layanan <i class="fas fa-angle-down"></i></a>
                 <ul class="sub-menu">
                   <li class="sub-item"><a href="P-Arsip.php">Peminjaman Arsip</a></li>
                   <li class="sub-item"><a href="D-Arsip.php">Daftar Arsip</a></li>
@@ -57,23 +57,7 @@
         <div class="menu-btn"></div>
       </header>
     <!-- End Navbar -->
-    <!-- Start Peraturan -->
-      <h1 class="tittle fw-bolder">Peraturan Arsip <br> Kantor Pencarian dan Pertolongan Kelas A Medan</h1>
-        <div class="container">
-          <div class="box">
-              <div class="post-tittle">
-                <h5><i class="bi bi-x-diamond-fill"></i></h5>
-                  <div class="post">
-                    <h2>JUDUL PERATURAN</h2>
-                    <h5>KETERANGAN</h5>
-                    <a href="" class="btn read-more">Download</a>
-                  </div>
-              </div>
-          </div>
-        <div class="box"></div>
-        <div class="box"></div>
-      </div>
-    <!-- End Peraturan -->
+
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <!-- CDNS -->
