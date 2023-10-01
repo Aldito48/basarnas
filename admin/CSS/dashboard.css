@@ -17,8 +17,6 @@
 }
 body {
   min-height: 100vh;
-  background: var(--color-body);
-  color: var(--color-body);
   background-size: cover;
   background-position: center;
 }

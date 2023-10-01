@@ -17,6 +17,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/CSS/styleAK.css" />
 
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../assets/img/sar.ico" type="image/x-icon">
+
     <title>Publikasi | Basarnas</title>
   </head>
   <body>
@@ -59,25 +62,59 @@
     <!-- End Navbar -->
 
     <!-- Start AK -->
-    <h1 class="tittle fw-bolder">Hasil Audit Kearsipan <br>Tahun 2023</h1>
-        <div class="container">
-          <div class="box">
-              <div class="post-tittle">
-                <h5><i class="bi bi-x-diamond-fill"></i></h5>
-                  <div class="post">
-                    <h2>Akuntabilitas Kinerja</h2>
-                    <h5>KETERANGAN</h5>
-                    <a href="" class="btn read-more">Download</a>
-                  </div>
-              </div>
-          </div>
-        <div class="box"></div>
-        <div class="box"></div>
-      </div>
+      <h1 class="tittle fw-bolder">Hasil Audit Kearsipan <br>Tahun 2023</h1>
+          <div class="container">
+            <div class="box">
+                <div class="post-tittle">
+                  <h5><i class="bi bi-x-diamond-fill"></i></h5>
+                    <div class="post">
+                      <h2>Akuntabilitas Kinerja</h2>
+                      <h5>KETERANGAN</h5>
+                      <a href="" class="btn read-more">Download</a>
+                    </div>
+                </div>
+            </div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
     <!-- End AK -->
 
     <!-- Start Footer -->
-    
+      <footer class="footer-distributed">
+        <div class="footer-left">
+            <h3>ARSIPARIS KANSAR<span> MEDAN</span></h3>
+            <p class="footer-links">
+                <a href="Beranda.php">Beranda</a>
+                |
+                <a href="Profil.php">Profil</a>
+                |
+                <a href="Hubungi-Kami.php">Hubungi Kami</a>
+                |
+                <a href="P-Arsip.php">Layanan</a>
+            </p>
+            <p class="footer-company-name">Copyright © 2021 <strong>Basarnas Medan</strong> All rights reserved</p>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="bi bi-geo-alt-fill"></i>
+                <p><span>Jl. Letjen Jamin Ginting No. 99 Kelurahan Sidomulyo, <br>Kecamatan Medan Tuntungan, Kota Medan</span>
+                Sumatera Utara</p>
+            </div>
+            <div>
+                <i class="bi bi-envelope-fill"></i>
+                <p><a href="mailto:arsipariskansarmedan@gmail.com">arsipariskansarmedan@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>Tentang Kami</span>
+                  Basarnas merupakan leading sektor resmi milik Indonesia pada operasi Search and Rescue (SAR). 
+                  Dengan posisi tersebut, perannya begitu besar pada level nasional, bahkan internasional. 
+                  Tujuan utama kehadiran Basarnas adalah menyediakan layanan pencarian dan pertolongan (SAR)
+                  bagi seluruh warga dalam berbagai musibah.
+            </p>
+        </div>
+      </footer>
     <!-- End Footer -->
 
     <!-- Bootstrap -->

@@ -17,6 +17,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/CSS/stylePeraturan.css" />
 
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../assets/img/sar.ico" type="image/x-icon">
+
     <title>Peraturan | Basarnas</title>
   </head>
   <body>
@@ -76,6 +79,44 @@
       </div>
     <!-- End Peraturan -->
     
+    <!-- Start Footer -->
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <h3>ARSIPARIS KANSAR<span> MEDAN</span></h3>
+            <p class="footer-links">
+                <a href="Beranda.php">Beranda</a>
+                |
+                <a href="Profil.php">Profil</a>
+                |
+                <a href="Hubungi-Kami.php">Hubungi Kami</a>
+                |
+                <a href="P-Arsip.php">Layanan</a>
+            </p>
+            <p class="footer-company-name">Copyright © 2021 <strong>Basarnas Medan</strong> All rights reserved</p>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="bi bi-geo-alt-fill"></i>
+                <p><span>Jl. Letjen Jamin Ginting No. 99 Kelurahan Sidomulyo, <br>Kecamatan Medan Tuntungan, Kota Medan</span>
+                Sumatera Utara</p>
+            </div>
+            <div>
+                <i class="bi bi-envelope-fill"></i>
+                <p><a href="mailto:arsipariskansarmedan@gmail.com">arsipariskansarmedan@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>Tentang Kami</span>
+                  Basarnas merupakan leading sektor resmi milik Indonesia pada operasi Search and Rescue (SAR). 
+                  Dengan posisi tersebut, perannya begitu besar pada level nasional, bahkan internasional. 
+                  Tujuan utama kehadiran Basarnas adalah menyediakan layanan pencarian dan pertolongan (SAR)
+                  bagi seluruh warga dalam berbagai musibah.
+            </p>
+        </div>
+      </footer>
+    <!-- End Footer -->
+
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <!-- CDNS -->
