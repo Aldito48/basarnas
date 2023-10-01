@@ -17,7 +17,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/CSS/styleBeranda.css" />
 
-    <title>ANRI | Beranda</title>
+    <title>Beranda | Basarnas</title>
   </head>
   <body>
     <!-- Start Navbar -->

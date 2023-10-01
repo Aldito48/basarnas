@@ -17,7 +17,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/CSS/styleD-Arsip.css" />
 
-    <title>ANRI | Layanan</title>
+    <title>Layanan | Basarnas</title>
   </head>
   <body>
     <!-- Start Navbar -->

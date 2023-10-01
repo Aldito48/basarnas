@@ -17,7 +17,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/CSS/stylePeraturan.css" />
 
-    <title>ANRI | Peraturan</title>
+    <title>Peraturan | Basarnas</title>
   </head>
   <body>
     <!-- Start Navbar -->

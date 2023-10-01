@@ -17,7 +17,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/CSS/styleAK.css" />
 
-    <title>ANRI | Publikasi</title>
+    <title>Publikasi | Basarnas</title>
   </head>
   <body>
     <!-- Start Navbar -->

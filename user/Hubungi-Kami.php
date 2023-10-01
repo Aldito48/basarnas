@@ -17,7 +17,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/CSS/styleHubungi-kami.css" />
 
-    <title>ANRI | Hubungi Kami</title>
+    <title>Hubungi Kami | Basarnas</title>
   </head>
   <body>
     <!-- Start Navbar -->

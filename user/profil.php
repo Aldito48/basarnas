@@ -17,7 +17,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/CSS/styleProfil.css" />
 
-    <title>ANRI | Layanan</title>
+    <title>Profil | Basarnas</title>
   </head>
   <body>
     <!-- Start Navbar -->
@@ -149,6 +149,35 @@
       </section>
       </section>
     <!-- End Tree -->
+
+    <!-- Start Info -->
+      <section id="info">
+        <div class="flex">
+          <div class="content-section">
+            <div class="card">
+              <img src="../assets/img/card1.jpeg" alt="">
+              <h2>Ofi Aufia Andini, A.Md</h2>
+              <p> NIP : 199604072019022001
+                  Tempat, tanggal Lahir : Tebing Tinggi, 07 April 1996
+                  Pendidikan : D3 Akuntansi USU 2016
+                  Jabatan : Calon Arsiparis 
+                  Email &nbsp;: andiniofiaufia@gmail.com
+              </p>
+            </div>
+            <div class="card">
+              <img src="../assets/img/card2.jpeg" alt="">
+              <h2>Marselina Tampubolon, A.Md.</h2>
+              <p> NIP : 199409122019022002
+                  Tempat, tanggal Lahir : Medan, 12 September 1994
+                  Pendidikan : Diploma III
+                  Jabatan : Arsiparis Pelaksana
+                  Email : - 
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- End Info -->
 
     <!-- Bootstrap -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
