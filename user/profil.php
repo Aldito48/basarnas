@@ -31,8 +31,8 @@
               <a class="sub-btn">Profil <i class="fas fa-angle-down"></i></a>
                 <ul class="sub-menu">
                   <li class="sub-item"><a href="profil.php#">Visi & Misi</a></li>
-                  <li class="sub-item"><a href="profil.php#">Tugas Pokok dan Fungsi</a></li>
-                  <li class="sub-item"><a href="profil.php#">Struktur Organisasi</a></li>
+                  <li class="sub-item"><a href="profil.php#page">Tugas Pokok dan Fungsi</a></li>
+                  <li class="sub-item"><a href="profil.php#tree">Struktur Organisasi</a></li>
                   <li class="sub-item"><a href="profil.php#">Profil Pengolah</a></li>
                 </ul>
             </li>
@@ -59,10 +59,96 @@
     <!-- End Navbar -->
 
     <!-- Start ViMi -->
-    <section class="vimi">
-      
-    </section>
+      <section id="visi">
+      <i class="bi bi-bookmark"></i>
+        <div class="kolom">
+            <h1 class="deskripsi">Visi</h1>
+            <p><em>"Menjadikan Arsip Sebagai Simpul Pemersatu Bangsa Dalam Kerangka Negara Kesatuan Republik Indonesia."</em></p>
+        </div>
+      </section>
+      <section id="misi">
+        <div class="kolom">
+            <h1 class="deskripsi">Misi</h1>
+            <p> 
+              <ol align="justify">
+                <li>Memberdayakan arsip sebagai tulang punggung manajemen pemerintahan dan pembangunan. </li>
+                <li>Memberdayakan arsip sebagai bukti akuntabilitas kinerja organisasi.</li>
+                <li>Memberdayaan arsip sebagai alat bukti yang sah </li>
+                <li>Melestarikan arsip sebagai memori kolektif dan jati diri bangsa dalam kerangka Negara Kesatuan Republik Indonesia</li>
+                <li>Memberikan akses arsip kepada publik untuk kepentingan pemerintahan, pembangunan, penelitian, dan ilmu pengetahuan untuk kesejahteraan rakyat sesuai perauran perundang-undangan dan kaidah-kaidah kearsipan demi kemaslahatan bangsa.</li>
+              </ol>  
+            </p>
+        </div>
+      </section>
     <!-- End ViMi -->
+
+    <!-- Start Page 2 -->
+      <section id="page">
+        <div class="kolom">
+            <h1 class="deskripsi">Tugas Pokok dan Fungsi</h1>
+            <div></div>
+            <h3>Tugas Pokok</h3>
+            <p align="justify"> &nbsp;&nbsp;Melaksanakan tugas pemerintahan di bidang kearsipan sesuai dengan ketentuan dan peraturan perundang-undangan</p>
+            <div><br></div>
+            <h3>Fungsi</h3>
+            <p> 
+              <ol align="justify">
+                <li>Memberdayakan arsip sebagai tulang punggung manajemen pemerintahan dan pembangunan.</li> 
+                <li>Memberdayakan arsip sebagai bukti akuntabilitas kinerja organisasi.</li> 
+                <li>Memberdayaan arsip sebagai alat bukti yang sah.</li> 
+                <li>Melestarikan arsip sebagai memori kolektif dan jati diri bangsa dalam kerangka Negara Kesatuan Republik Indonesia. </li>
+                <li>Memberikan akses arsip kepada publik untuk kepentingan pemerintahan, pembangunan, penelitian, dan ilmu pengetahuan untuk kesejahteraan rakyat sesuai peraturan perundang-undangan dan kaidah-kaidah kearsipan demi kemaslahatan bangsa.</li>
+              </ol>
+            </p>
+        </div>
+      </section>
+    <!-- End Page 2 -->
+
+    <!-- Start Tree -->
+      <section id="tree">
+        <div class="kolom">
+            <h1 class="deskripsi">Struktur Organisasi</h1>
+            <div><img src="../assets/img/SO.jpeg" alt=""></div>
+            <div><br></div>
+            <p align="justify">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Organisasi Kearsipan Badan Nasional Pencarian dan Pertolongan diatur dalam Peraturan Kepala Badan Nasional 
+              Pencarian dan Pertolongan Nomor 5 Tahun 2022 tentang Pedoman Pemeliharaan Arsip Dinamis di Lingkungan Badan 
+              Nasional Pencarian dan Pertolongan.
+            </p>
+            <p>Berikut merupakan organisasi kearsipan Badan Nasional Pencarian dan Pertolongan :</p>
+            <h3>A. Unit Pengolah</h3>
+            <p> 
+              <ol align="justify">
+                <li>Biro Hukum dan Kepegawaian;</li>
+                <li>Biro Perencanaan;</li>
+                <li>Biro Umum;</li>
+                <li>Pusat Data dan Informasi;</li>
+                <li>Inspektorat;</li>
+                <li>Direktorat Operasi;</li>
+                <li>Direktorat Kesiapsiagaan;</li>
+                <li>Direktorat Bina Tenaga;</li>
+                <li>Direktorat Bina Potensi;</li>
+                <li>Direktorat Sistem Komunikasi;</li>
+                <li>Direktorat Sarana dan Prasarana;</li>
+                <li>Kantor Pencarian dan Pertolongan di lingkungan Badan Nasional Pencarian dan Pertolongan; dan</li>
+                <li>Balai Pendidikan dan Pelatihan Badan Nasional Pencarian dan Pertolongan.</li>
+              </ol>
+            <div><br></div>
+            <h3>B. Unit Kearsipan I Biro Umum</h3>
+            <p align="justify">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit Kearsipan adalah satuan kerja pada pencipta arsip yang mempunyai tugas dan tanggung jawab dalam penyelenggaraan 
+              kearsipan. Unit Kearsipan I adalah Unit Kerja di bawah Sekretariat Utama yang mempunyai tugas dan tanggung jawab dalam 
+              penyelenggaraan kearsipan, pengendalian dan pengarahan arsip dinamis aktif, pengelolaan arsip dinamis inaktif yang berasal 
+              dari Unit Pengolah, pengarahan program arsip vital, akuisisi arsip, penyelenggaraan sistem informasi kearsipan, pembinaan,
+              bimbingan, dan pengawasan terhadap pengelolaan kearsipan pada seluruh Unit Kerja di lingkungan Badan Nasional Pencarian dan
+              Pertolongan. Unit Kearsipan II adalah unit organisasi Jabatan Pengawas yang salah satu kegiatan pokoknya melakukan pengelolaan
+              arsip dinamis di Unit Kerja masing-masing. Unit Pengolah adalah satuan kerja pada pencipta arsip yang mempunyai tugas dan 
+              tanggung jawab mengolah semua arsip yang berkaitan dengan kegiatan penciptaan arsip di lingkungannya.
+            </p>
+        </div>
+      </section>
+      </section>
+    <!-- End Tree -->
 
     <!-- Bootstrap -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>

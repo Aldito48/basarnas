@@ -31,8 +31,8 @@
               <a class="sub-btn">Profil <i class="fas fa-angle-down"></i></a>
                 <ul class="sub-menu">
                 <li class="sub-item"><a href="profil.php#">Visi & Misi</a></li>
-                  <li class="sub-item"><a href="profil.php#">Tugas Pokok dan Fungsi</a></li>
-                  <li class="sub-item"><a href="profil.php#">Struktur Organisasi</a></li>
+                  <li class="sub-item"><a href="profil.php#page">Tugas Pokok dan Fungsi</a></li>
+                  <li class="sub-item"><a href="profil.php#tree">Struktur Organisasi</a></li>
                   <li class="sub-item"><a href="profil.php#">Profil Pengolah</a></li>
                 </ul>
             </li>

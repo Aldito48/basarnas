@@ -176,8 +176,8 @@ header .navigation .menu{
   font-family: monospace;
 }
 .slider{
-  width: 1350px;
-  height: 700px;
+  width: 1345px;
+  height: 680px;
   position: relative;
   margin: auto;
   overflow: hidden;
@@ -192,7 +192,7 @@ header .navigation .menu{
   transition: 1s;
 }
 .slider .list img{
-  width: 1350px;
+  width: 1345px;
   height: 100%;
   object-fit: cover;
 }
@@ -206,13 +206,14 @@ header .navigation .menu{
 }
 .slider .buttons h1{
   color: var(--color-default);
+  text-align: center;
   font-weight: bold;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 50px;
+  font-size: 40px;
   background-color: rgba(0, 0, 0, 0.5);
   border: 1px solid var(--color-box);
   padding: 5px 30px 5px 30px;
-  margin: 0 0 50px 0;
+  margin: auto;
   border-radius: 50px;
 }
 .slider .buttons button{
@@ -230,7 +231,7 @@ header .navigation .menu{
 }
 .slider .dots{
   position: absolute;
-  bottom: 50px;
+  bottom: 60px;
   left: 0;
   color: var(--color-default);
   width: 100%;
