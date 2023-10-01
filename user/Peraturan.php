@@ -33,7 +33,7 @@
                   <li class="sub-item"><a href="profil.php#">Visi & Misi</a></li>
                   <li class="sub-item"><a href="profil.php#page">Tugas Pokok dan Fungsi</a></li>
                   <li class="sub-item"><a href="profil.php#tree">Struktur Organisasi</a></li>
-                  <li class="sub-item"><a href="profil.php#">Profil Pengolah</a></li>
+                  <li class="sub-item"><a href="profil.php#info">Profil Pengolah</a></li>
                 </ul>
             </li>
             <li class="menu-item">
@@ -57,6 +57,7 @@
         <div class="menu-btn"></div>
       </header>
     <!-- End Navbar -->
+
     <!-- Start Peraturan -->
       <h1 class="tittle fw-bolder">Peraturan Arsip <br> Kantor Pencarian dan Pertolongan Kelas A Medan</h1>
         <div class="container">
@@ -74,6 +75,7 @@
         <div class="box"></div>
       </div>
     <!-- End Peraturan -->
+    
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <!-- CDNS -->

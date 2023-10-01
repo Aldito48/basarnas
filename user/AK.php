@@ -33,7 +33,7 @@
                 <li class="sub-item"><a href="profil.php#">Visi & Misi</a></li>
                   <li class="sub-item"><a href="profil.php#page">Tugas Pokok dan Fungsi</a></li>
                   <li class="sub-item"><a href="profil.php#tree">Struktur Organisasi</a></li>
-                  <li class="sub-item"><a href="profil.php#">Profil Pengolah</a></li>
+                  <li class="sub-item"><a href="profil.php#info">Profil Pengolah</a></li>
                 </ul>
             </li>
             <li class="menu-item">
@@ -57,6 +57,24 @@
         <div class="menu-btn"></div>
       </header>
     <!-- End Navbar -->
+
+    <!-- Start AK -->
+    <h1 class="tittle fw-bolder">Hasil Audit Kearsipan <br>Tahun 2023</h1>
+        <div class="container">
+          <div class="box">
+              <div class="post-tittle">
+                <h5><i class="bi bi-x-diamond-fill"></i></h5>
+                  <div class="post">
+                    <h2>Akuntabilitas Kinerja</h2>
+                    <h5>KETERANGAN</h5>
+                    <a href="" class="btn read-more">Download</a>
+                  </div>
+              </div>
+          </div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+    <!-- End AK -->
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>

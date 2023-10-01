@@ -33,7 +33,7 @@
                   <li class="sub-item"><a href="profil.php#">Visi & Misi</a></li>
                   <li class="sub-item"><a href="profil.php#page">Tugas Pokok dan Fungsi</a></li>
                   <li class="sub-item"><a href="profil.php#tree">Struktur Organisasi</a></li>
-                  <li class="sub-item"><a href="profil.php#">Profil Pengolah</a></li>
+                  <li class="sub-item"><a href="profil.php#info">Profil Pengolah</a></li>
                 </ul>
             </li>
             <li class="menu-item">
@@ -58,10 +58,89 @@
       </header>
     <!-- End Navbar -->
 
+    <!-- Start Arsip -->
+      <section id="arsip">
+        <main class="table">
+          <section class="table__header">
+              <h1>&nbsp;Daftar Arsip</h1>
+          </section>
+          <section class="table__body">
+              <table>
+                  <thead>
+                      <tr>
+                          <th> No </th>
+                          <th> Jenis Arsip </th>
+                          <th> Kode Arsip </th>
+                          <th> Tanggal Arsip </th>
+                          <th> Status </th>
+                          <th> Jumlah </th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td> 1 </td>
+                          <td> - </td>
+                          <td> - </td>
+                          <td> - </td>
+                          <td>
+                              <p class="status"><a href="">Download</a></p>
+                          </td>
+                          <td><Strong></Strong></td>
+                      </tr>
+                      <tr>
+                          <td> 2 </td>
+                          <td> - </td>
+                          <td> - </td>
+                          <td> - </td>
+                          <td>
+                              <p class="status"><a href="">Download</a></p>
+                          </td>
+                          <td><Strong></Strong></td>
+                      </tr>
+                      <tr>
+                          <td> 3 </td>
+                          <td> - </td>
+                          <td> - </td>
+                          <td> - </td>
+                          <td>
+                              <p class="status"><a href="">Download</a></p>
+                          </td>
+                          <td><Strong></Strong></td>
+                      </tr>
+                      <tr>
+                          <td> 4 </td>
+                          <td> - </td>
+                          <td> - </td>
+                          <td> - </td>
+                          <td>
+                              <p class="status"><a href="">Download</a></p>
+                          </td>
+                          <td><Strong></Strong></td>
+                      </tr>
+                      <tr>
+                          <td> 5 </td>
+                          <td> - </td>
+                          <td> - </td>
+                          <td> - </td>
+                          <td>
+                              <p class="status"><a href="">Download</a></p>
+                          </td>
+                          <td><Strong></Strong></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </section>
+        </main>
+      </section>
+    <!-- End Arsip -->
+
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <!-- CDNS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Arsip -->
+    <script src="../assets/js/script.js"></script>
 
     <!-- Toggle -->
     <script type="text/javascript">

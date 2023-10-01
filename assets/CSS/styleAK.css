@@ -173,3 +173,90 @@
     }
   }
   
+/* AK */
+.tittle {
+  padding-top: 7rem;
+  text-align: center;
+}
+.container {
+  padding-top: 3rem;
+  gap: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.box {
+  border-radius: 1px;
+  width: 70rem;
+  height: 13rem;
+  padding: 2rem;
+  background-color: var(--color-box);
+}
+.box .post-tittle {
+  margin-top: -5px;
+  width: 65rem;
+  height: 10rem;
+}
+.box .post-tittle i {
+  float: left;
+}
+.box .post-tittle .post {
+  margin-top: -10px;
+  margin-left: 4rem;
+}
+.box .post-tittle .post h5 {
+  color: var(--color-text);
+}
+.box .post-tittle .post a {
+  float: right;
+}
+.box .post-tittle .post .btn {
+  background: var(--color-default);
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+.box .post-tittle .post .btn:hover {
+  color: var(--color-body);
+  background: var(--color-text);
+}
+
+@media (max-width: 1100px) {
+  .box {
+    width: 50rem;
+    height: 13rem;
+  }
+  .box .post-tittle {
+    margin-top: -5px;
+    width: 40rem;
+    height: 10rem;
+  }
+  .box .post-tittle .post {
+    margin-top: -10px;
+    margin-left: 3rem;
+  }
+  .box .post-tittle .post a {
+    margin-right: -20px;
+    float: right;
+  }
+}
+@media (max-width: 800px) {
+  .box {
+    width: 22rem;
+    height: 27rem;
+  }
+  .box .post-tittle {
+    margin-top: -5px;
+    width: 20rem;
+    height: 28rem;
+  }
+  .box .post-tittle .post {
+    margin-top: -10px;
+    margin-left: 3rem;
+  }
+  .box .post-tittle .post a {
+    margin-right: 20px;
+    margin-top: 260px;
+    float: right;
+  }
+}

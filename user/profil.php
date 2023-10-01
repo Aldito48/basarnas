@@ -33,7 +33,7 @@
                   <li class="sub-item"><a href="profil.php#">Visi & Misi</a></li>
                   <li class="sub-item"><a href="profil.php#page">Tugas Pokok dan Fungsi</a></li>
                   <li class="sub-item"><a href="profil.php#tree">Struktur Organisasi</a></li>
-                  <li class="sub-item"><a href="profil.php#">Profil Pengolah</a></li>
+                  <li class="sub-item"><a href="profil.php#info">Profil Pengolah</a></li>
                 </ul>
             </li>
             <li class="menu-item">
@@ -152,27 +152,34 @@
 
     <!-- Start Info -->
       <section id="info">
+      <h1 class="deskripsi">Profil Pengolah</h1>
         <div class="flex">
           <div class="content-section">
             <div class="card">
               <img src="../assets/img/card1.jpeg" alt="">
               <h2>Ofi Aufia Andini, A.Md</h2>
-              <p> NIP : 199604072019022001
-                  Tempat, tanggal Lahir : Tebing Tinggi, 07 April 1996
-                  Pendidikan : D3 Akuntansi USU 2016
-                  Jabatan : Calon Arsiparis 
-                  Email &nbsp;: andiniofiaufia@gmail.com
-              </p>
+                <table border="5">
+                  <tbody> 
+                    <tr><td>NIP</td><td>:</td><td> &nbsp;199604072019022001</td></tr>
+                    <tr><td>Tempat, Tanggal Lahir</td><td>:</td><td> &nbsp;Tebing Tinggi, 07 April 1996</td></tr>
+                    <tr><td>Pendidikan</td><td>:</td><td> &nbsp;D3 Akuntansi USU 2016</td></tr>
+                    <tr><td>Jabatan</td><td>:</td><td> &nbsp;Calon Arsiparis</td></tr>
+                    <tr><td>Email</td><td>:</td><td> &nbsp;andiniofiaufia@gmail.com</td></tr>
+                  </tbody>
+                </table>
             </div>
             <div class="card">
               <img src="../assets/img/card2.jpeg" alt="">
               <h2>Marselina Tampubolon, A.Md.</h2>
-              <p> NIP : 199409122019022002
-                  Tempat, tanggal Lahir : Medan, 12 September 1994
-                  Pendidikan : Diploma III
-                  Jabatan : Arsiparis Pelaksana
-                  Email : - 
-              </p>
+              <table border="5">
+                  <tbody> 
+                    <tr><td>NIP</td><td>:</td><td> &nbsp;199409122019022002</td></tr>
+                    <tr><td>Tempat, Tanggal Lahir</td><td>:</td><td> &nbsp;Medan, 12 September 1994</td></tr>
+                    <tr><td>Pendidikan</td><td>:</td><td> &nbsp;Diploma III</td></tr>
+                    <tr><td>Jabatan</td><td>:</td><td> &nbsp;Arsiparis Pelaksana</td></tr>
+                    <tr><td>Email</td><td>:</td><td> &nbsp;-</td></tr>
+                  </tbody>
+                </table>
             </div>
           </div>
         </div>

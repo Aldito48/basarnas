@@ -33,7 +33,7 @@
                   <li class="sub-item"><a href="profil.php#">Visi & Misi</a></li>
                   <li class="sub-item"><a href="profil.php#page">Tugas Pokok dan Fungsi</a></li>
                   <li class="sub-item"><a href="profil.php#tree">Struktur Organisasi</a></li>
-                  <li class="sub-item"><a href="profil.php#">Profil Pengolah</a></li>
+                  <li class="sub-item"><a href="profil.php#info">Profil Pengolah</a></li>
                 </ul>
             </li>
             <li class="menu-item">

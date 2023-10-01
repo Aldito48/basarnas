@@ -33,7 +33,7 @@
                   <li class="sub-item"><a href="profil.php#">Visi & Misi</a></li>
                   <li class="sub-item"><a href="profil.php#page">Tugas Pokok dan Fungsi</a></li>
                   <li class="sub-item"><a href="profil.php#tree">Struktur Organisasi</a></li>
-                  <li class="sub-item"><a href="profil.php#">Profil Pengolah</a></li>
+                  <li class="sub-item"><a href="profil.php#info">Profil Pengolah</a></li>
                 </ul>
             </li>
             <li class="menu-item">
@@ -57,6 +57,47 @@
         <div class="menu-btn"></div>
       </header>
     <!-- End Navbar -->
+
+    <!-- Content (Start) -->
+      <section id="content">
+        <form method="POST" action="prosesForm.php">
+            <div class="wrapper">
+                <div class="title">
+                  Peminjaman Arsip
+                </div>
+                <div class="form">
+                    <div class="input_field">
+                        <label for="Nama">Nama Peminjam</label>
+                        <input type="text" id="Nama" name="Nama" class="input" required autofocus>
+                    </div>
+                    <div class="input_field">
+                        <label for="Email">Jenis Arsip</label>
+                        <input type="text" id="Email" name="Email" class="input" required>
+                    </div>
+                    <div class="input_field">
+                        <label for="Telp">Kode Arsip</label>
+                        <input type="text" id="Telp" name="Telp" class="input" required>
+                    </div>
+                    <div class="input_field">
+                        <label for="Telp">Jumlah Arsip</label>
+                        <input type="number" id="Telp" name="Telp" class="input" required>
+                    </div>
+                    <div class="input_field">
+                        <label for="Telp">Tanggal Peminjam</label>
+                        <input type="date" id="Telp" name="Telp" class="input" required>
+                    </div>
+                    <div class="input_field">
+                        <label for="Telp">Tanggal Peminjam</label>
+                        <input type="date" id="Telp" name="Telp" class="input" required>
+                    </div>
+                    <div class="input_field">
+                        <input type="submit" value="Kirim" class="btn" name="submit">
+                    </div>
+                </div>
+            </div>
+        </form>
+      </section>
+    <!-- Content (End) -->
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
