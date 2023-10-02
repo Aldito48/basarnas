@@ -17,6 +17,7 @@
 }
 body {
   min-height: 100vh;
+  background: var(--color-body);
   background-size: cover;
   background-position: center;
 }
@@ -55,13 +56,14 @@ img {
 .side-bar.active {
   left: 0;
 }
-h1 {
+header h1 {
   text-align: center;
   font-weight: 500;
   font-size: 25px;
   padding-bottom: 13px;
   font-family: sans-serif;
   letter-spacing: 2px;
+  color: var(--color-body);
 }
 .side-bar .menu {
   width: 100%;
@@ -124,12 +126,20 @@ h1 {
   text-align: center;
   padding: 20px 0 0 0 ;
 }
-.table{
-  border: 0;
+table {
+  width: 100%;
 }
-.table td{
-  background-color: black;
+table td {
   border-radius: 5px;
+  text-align: center;
+  background-color: var(--color-body);
+  color: var(--color-black);
+}
+table th{
+  border-radius: 5px;
+  text-align: center;
+  background-color: var(--color-black);
+  color: var(--color-body);
 }
 
 @media (max-width: 900px) {

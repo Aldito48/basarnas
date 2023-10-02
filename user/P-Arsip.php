@@ -1,7 +1,15 @@
+<?php
+  require_once "../config/config.php";
+?>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
 
@@ -16,9 +24,6 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/CSS/styleP-Arsip.css" />
-
-    <!-- favicon -->
-    <link rel="shortcut icon" href="../assets/img/sar.ico" type="image/x-icon">
 
     <title>Layanan | Basarnas</title>
   </head>
@@ -63,82 +68,89 @@
 
     <!-- Content (Start) -->
       <section id="content">
-        <form method="POST" action="prosesForm.php">
+        <form method="POST">
             <div class="wrapper">
                 <div class="title">
                   Peminjaman Arsip
                 </div>
                 <div class="form">
                     <div class="input_field">
-                        <label for="Nama">Nama Peminjam</label>
-                        <input type="text" id="Nama" name="Nama" class="input" required autofocus>
+                        <label for="nama_peminjam">Nama Peminjam</label>
+                        <input type="text" id="nama_peminjam" name="nama_peminjam" class="input" placeholder="Nama Peminjam..." required autofocus>
                     </div>
                     <div class="input_field">
-                        <label for="Email">Jenis Arsip</label>
-                        <input type="text" id="Email" name="Email" class="input" required>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" class="input" placeholder="E-mail..." required autofocus>
                     </div>
                     <div class="input_field">
-                        <label for="Telp">Kode Arsip</label>
-                        <input type="text" id="Telp" name="Telp" class="input" required>
+                        <label for="no_hp">No. Hp</label>
+                        <input type="text" id="no_hp" name="no_hp" class="input" placeholder="No. Hp..." required autofocus>
                     </div>
                     <div class="input_field">
-                        <label for="Telp">Jumlah Arsip</label>
-                        <input type="number" id="Telp" name="Telp" class="input" required>
+                        <label for="jenis_arsip">Jenis Arsip</label>
+                        <input type="text" id="jenis_arsip" name="jenis_arsip" class="input" placeholder="Jenis Arsip..." required>
                     </div>
                     <div class="input_field">
-                        <label for="Telp">Tanggal Peminjam</label>
-                        <input type="date" id="Telp" name="Telp" class="input" required>
+                        <label for="kode_arsip">Kode Arsip</label>
+                        <input type="text" id="kode_arsip" name="kode_arsip" placeholder="Kode Arsip..." class="input" required>
                     </div>
                     <div class="input_field">
-                        <label for="Telp">Tanggal Peminjam</label>
-                        <input type="date" id="Telp" name="Telp" class="input" required>
+                        <label for="jumlah">Jumlah Arsip</label>
+                        <input type="number" id="jumlah" name="jumlah" class="input" required>
                     </div>
                     <div class="input_field">
-                        <input type="submit" value="Kirim" class="btn" name="submit">
+                        <label for="tgl_pinjam">Tanggal Pinjam</label>
+                        <input type="date" id="tgl_pinjam" name="tgl_pinjam" class="input" required>
+                    </div>
+                    <div class="input_field">
+                        <label for="tgl_kembali">Tanggal Kembali</label>
+                        <input type="date" id="tgl_kembali" name="tgl_kembali" class="input" required>
+                    </div>
+                    <div class="input_field">
+                        <input type="submit" value="Kirim" class="btn" id="Kirim" name="Kirim">
                     </div>
                 </div>
             </div>
         </form>
+        <?php
+          if(isset($_POST['Kirim'])){
+            $np = trim(mysqli_real_escape_string($con, $_POST['nama_peminjam']));
+            $email = trim(mysqli_real_escape_string($con, $_POST['email']));
+            $hp = trim(mysqli_real_escape_string($con, $_POST['no_hp']));
+            $ja = trim(mysqli_real_escape_string($con, $_POST['jenis_arsip']));
+            $ka = trim(mysqli_real_escape_string($con, $_POST['kode_arsip']));
+            $jumlah = trim(mysqli_real_escape_string($con, $_POST['jumlah']));
+            $pinjam = trim(mysqli_real_escape_string($con, $_POST['tgl_pinjam']));
+            $balik = trim(mysqli_real_escape_string($con, $_POST['tgl_kembali']));
+            mysqli_query($con, "INSERT INTO peminjaman (ID, nama_peminjam, email, no_hp, jenis_arsip, kode_arsip, jumlah, tgl_pinjam, tgl_kembali) VALUES ('', '$np', '$email', '$hp', '$ja', '$ka', '$jumlah', '$pinjam', '$balik')") or die (mysqli_error($con));
+            echo "<script>window.location='P-Arsip.php';</script>";
+          }
+
+          if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $np = $_POST["nama_peminjam"];
+            $email = $_POST["email"];
+            $hp = $_POST["no_hp"];
+            $ja = $_POST["jenis_arsip"];
+            $ka = $_POST["kode_arsip"];
+            $jumlah = $_POST['jumlah'];
+            $pinjam = $_POST["tgl_pinjam"];
+            $balik = $_POST["tgl_balik"];
+    
+            $to = "arsipariskansar@gmail.com";
+            $subject = "Pesan Ajuan Peminjaman";
+            $message = "Nama Peminjam: $np\nE-mail: $email\nNo. Hp: $hp\nJenis Arsip: $ja\nKode Arsip: $ka\nJumlah: $jumlah\nTanggal Peminjaman: $pinjam\nTanggal Pengembalian: $balik";
+    
+            $headers = "From: $email";
+    
+            if (mail($to, $subject, $message, $headers)) {
+                echo "<script>alert('Berhasil Mengirim Pesan');</script>";
+            } else {
+                echo "<script>alert('Gagal Mengirim Pesan');</script>";
+            }
+          }
+        ?>
       </section>
     <!-- Content (End) -->
-
-    <!-- Start Footer -->
-    <footer class="footer-distributed">
-        <div class="footer-left">
-            <h3>ARSIPARIS KANSAR<span> MEDAN</span></h3>
-            <p class="footer-links">
-                <a href="Beranda.php">Beranda</a>
-                |
-                <a href="Profil.php">Profil</a>
-                |
-                <a href="Hubungi-Kami.php">Hubungi Kami</a>
-                |
-                <a href="P-Arsip.php">Layanan</a>
-            </p>
-            <p class="footer-company-name">Copyright © 2021 <strong>Basarnas Medan</strong> All rights reserved</p>
-        </div>
-        <div class="footer-center">
-            <div>
-                <i class="bi bi-geo-alt-fill"></i>
-                <p><span>Jl. Letjen Jamin Ginting No. 99 Kelurahan Sidomulyo, <br>Kecamatan Medan Tuntungan, Kota Medan</span>
-                Sumatera Utara</p>
-            </div>
-            <div>
-                <i class="bi bi-envelope-fill"></i>
-                <p><a href="mailto:arsipariskansarmedan@gmail.com">arsipariskansarmedan@gmail.com</a></p>
-            </div>
-        </div>
-        <div class="footer-right">
-            <p class="footer-company-about">
-                <span>Tentang Kami</span>
-                  Basarnas merupakan leading sektor resmi milik Indonesia pada operasi Search and Rescue (SAR). 
-                  Dengan posisi tersebut, perannya begitu besar pada level nasional, bahkan internasional. 
-                  Tujuan utama kehadiran Basarnas adalah menyediakan layanan pencarian dan pertolongan (SAR)
-                  bagi seluruh warga dalam berbagai musibah.
-            </p>
-        </div>
-      </footer>
-    <!-- End Footer -->
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>

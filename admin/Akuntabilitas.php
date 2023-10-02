@@ -58,12 +58,12 @@
         <!-- End Sidebar -->
 
         <!-- Start content -->
-            <section class="main">
+            <div class="main">
                 <h1>Akuntabilitas Kinerja</h1>
                 <a href="CRUD/Akuntabilitas/create.php">Tambahkan</a>
                 <div class="container">
                     <div class="data">
-                        <table cellspacing="5px">
+                        <table>
                             <thead>
                                 <tr>
                                     <th>No.</th>
@@ -85,7 +85,7 @@
                                                 <tr>
                                                     <td align="center"><?=$no++?>.</td>
                                                     <td align="center"><?=$data['hal']?></td>
-                                                    <td><?=$data['link']?></td>
+                                                    <td><a href="<?=$data['link']?>" target="_blank">link</a></td>
                                                     <td align="center">
                                                         <a href="CRUD/Akuntabilitas/update.php?id=<?=$data['ID']?>"><i class="fa-solid fa-pen-to-square"></i></a>
                                                         <a href="CRUD/Akuntabilitas/delete.php?id=<?=$data['ID']?>" onclick="return confirm('Yakin Mau Dihapus Nich ☹️')"><i class="fa-solid fa-trash"></i></a>
@@ -94,7 +94,7 @@
                                     <?php
                                             }
                                         } else{
-                                            echo "Belum Ada Pesan Diterima.";
+                                            echo "Belum Ada Data Akuntabilitas.";
                                         }
                                     ?>
                                 </tr>
@@ -102,7 +102,7 @@
                         </table>
                     </div>
                 </div>
-            </section>
+            </div>
         <!-- End Content -->
 
         <!-- Bootstrap -->

@@ -67,6 +67,7 @@
                             <thead>
                                 <tr>
                                     <th>No.</th>
+                                    <th>Caption</th>
                                     <th>Gambar</th>
                                     <th><i class="fa-solid fa-gear"></i></th>
                                 </tr>
@@ -83,6 +84,7 @@
                                     ?>
                                                 <tr>
                                                     <td align="center"><?=$no++?>.</td>
+                                                    <td align="center"><?=$data['caption']?></td>
                                                     <td align="center">
                                                         <?='<img src="data:image/jpeg;base64,'.base64_encode($data['gambar']).'"height="100" width="100"/>';?>
                                                     </td>
@@ -94,7 +96,7 @@
                                     <?php
                                             }
                                         } else{
-                                            echo "Belum Ada Pesan Diterima.";
+                                            echo "Belum Ada Foto.";
                                         }
                                     ?>
                                 </tr>

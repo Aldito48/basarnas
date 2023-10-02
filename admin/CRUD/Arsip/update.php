@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 
         <!-- CSS -->
-        <link rel="stylesheet" href="CSS/admin.css">
+        <link rel="stylesheet" href="../../CSS/arsip.css">
 
         <!-- Font -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
@@ -57,8 +57,28 @@
 
         <!-- Start content -->
             <section class="main">
-                <h1>Data Arsip</h1>
-                
+                <h1>Ubah Data Arsip</h1>
+                <div class="content"> 
+                    <?php
+                        $id = @$_GET['id'];
+                        $sql_arsip = mysqli_query($con, "SELECT * FROM arsipan WHERE ID = '$id'") or die (mysqli_error($con));
+                        $data = mysqli_fetch_array($sql_arsip);
+                    ?>
+                    <form action="proses.php" method="POST">
+                        <div>
+                            <label for="jenis">Jenis</label>
+                            <input type="hidden" name="id" value="<?=$data['ID']?>">
+                            <input type="text" id="jenis" name="jenis" value="<?=$data['jenis']?>" placeholder="Jenis..." required autofocus>
+                        </div>
+                        <div>
+                            <label for="link">Link</label>
+                            <input type="text" id="link" name="link" value="<?=$data['link']?>" placeholder="Link..." required>
+                        </div>
+                        <div class="tmbl1">
+                            <input type="submit" name="edit" value="Simpan">
+                        </div>
+                    </form>
+                </div>
             </section>
         <!-- End Content -->
 
