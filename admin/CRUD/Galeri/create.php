@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 
         <!-- CSS -->
-        <link rel="stylesheet" href="../../CSS/galeri.css">
+        <link rel="stylesheet" href="CSS/admin.css">
 
         <!-- Font -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
@@ -57,22 +57,7 @@
 
         <!-- Start content -->
             <section class="main">
-                <h1>Tambah Galeri</h1>
-                <div class="content">
-                    <form action="proses.php" method="POST" enctype="multipart/form-data">
-                        <div>
-                            <label for="caption">Caption</label>
-                            <input type="text" id="caption" name="caption" placeholder="Caption..." required autofocus>
-                        </div>
-                        <div>
-                            <label for="gambar">Gambar</label>
-                            <input type="file" id="gambar" name="gambar" class="image" required>
-                        </div>
-                        <div class="tmbl1">
-                            <input type="submit" name="add" value="Simpan">
-                        </div>
-                    </form>
-                </div>
+                <h1>Galeri</h1>
             </section>
         <!-- End Content -->
 
