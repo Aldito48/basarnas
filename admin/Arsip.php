@@ -63,7 +63,7 @@
                 <a href="CRUD/Arsip/create.php">Tambahkan</a>
                 <div class="container">
                     <div class="data">
-                        <table cellspacing="5px">
+                        <table cellspacing="6" cellpadding="5">
                             <thead>
                                 <tr>
                                     <th>No.</th>
@@ -85,7 +85,7 @@
                                                 <tr>
                                                     <td align="center"><?=$no++?>.</td>
                                                     <td align="center"><?=$data['jenis']?></td>
-                                                    <td><a href="<?=$data['link']?>">link</a></td>
+                                                    <td><a href="<?=$data['link']?>" target="_blank">link</a></td>
                                                     <td align="center">
                                                         <a href="CRUD/Arsip/update.php?id=<?=$data['ID']?>"><i class="fa-solid fa-pen-to-square"></i></a>
                                                         <a href="CRUD/Arsip/delete.php?id=<?=$data['ID']?>" onclick="return confirm('Apakah Yakin Ingin Dihapus?')"><i class="fa-solid fa-trash"></i></a>
@@ -94,7 +94,7 @@
                                     <?php
                                             }
                                         } else{
-                                            echo "Belum Ada Pesan Diterima.";
+                                            echo "Belum Ada Data Arsip.";
                                         }
                                     ?>
                                 </tr>

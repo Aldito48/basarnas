@@ -1,7 +1,15 @@
+<?php
+  require_once "../config/config.php";
+?>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
 
@@ -65,71 +73,39 @@
       <section id="arsip">
         <main class="table">
           <section class="table__header">
-              <h1>&nbsp;Daftar Arsip</h1>
+            <h1>Daftar Arsip</h1>
           </section>
           <section class="table__body">
               <table>
                   <thead>
                       <tr>
-                          <th> No </th>
-                          <th> Jenis Arsip </th>
-                          <th> Kode Arsip </th>
-                          <th> Tanggal Arsip </th>
-                          <th> Status </th>
-                          <th> Jumlah </th>
+                          <th>No.</th>
+                          <th>Jenis Arsip</th>
+                          <th style="text-align:center;"><i class="fa-solid fa-eye"></i></th>
                       </tr>
                   </thead>
                   <tbody>
-                      <tr>
-                          <td> 1 </td>
-                          <td> - </td>
-                          <td> - </td>
-                          <td> - </td>
-                          <td>
-                              <p class="status"><a href="">Download</a></p>
-                          </td>
-                          <td><Strong></Strong></td>
-                      </tr>
-                      <tr>
-                          <td> 2 </td>
-                          <td> - </td>
-                          <td> - </td>
-                          <td> - </td>
-                          <td>
-                              <p class="status"><a href="">Download</a></p>
-                          </td>
-                          <td><Strong></Strong></td>
-                      </tr>
-                      <tr>
-                          <td> 3 </td>
-                          <td> - </td>
-                          <td> - </td>
-                          <td> - </td>
-                          <td>
-                              <p class="status"><a href="">Download</a></p>
-                          </td>
-                          <td><Strong></Strong></td>
-                      </tr>
-                      <tr>
-                          <td> 4 </td>
-                          <td> - </td>
-                          <td> - </td>
-                          <td> - </td>
-                          <td>
-                              <p class="status"><a href="">Download</a></p>
-                          </td>
-                          <td><Strong></Strong></td>
-                      </tr>
-                      <tr>
-                          <td> 5 </td>
-                          <td> - </td>
-                          <td> - </td>
-                          <td> - </td>
-                          <td>
-                              <p class="status"><a href="">Download</a></p>
-                          </td>
-                          <td><Strong></Strong></td>
-                      </tr>
+                  <tr>
+                      <?php
+                          $no = 1;
+                          $query = "SELECT * FROM arsipan";
+                          $result = mysqli_query($con, $query);
+      
+                          if (mysqli_num_rows($result) > 0) {
+                            while ($data = mysqli_fetch_array($result)) {
+                      ?>
+                              <tr>
+                                  <td align="center"><?=$no++?>.</td>
+                                  <td align="center"><?=$data['jenis']?></td>
+                                  <td><p class="status"><a href="<?=$data['link']?>" target="_blank">Lihat</a></p></td>
+                              </tr>
+                      <?php
+                            }
+                          } else{
+                              echo "Belum Ada Data Arsip.";
+                          }
+                      ?>
+                  </tr>
                   </tbody>
               </table>
           </section>

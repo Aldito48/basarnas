@@ -225,7 +225,7 @@ h1::before {
     border-radius: 5px;
     box-shadow: 3px 3px 5px lightgray;
 }
-.top-content h3{
+h3{
     height: 100%;
     background-color: var(--color-text);
     line-height: 60px;
@@ -306,7 +306,7 @@ label{
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 20px;
     }
-    .top-content h3{
+    h3{
         height: 100%;
         line-height: 60px;
         padding: 0 10px;

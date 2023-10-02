@@ -1,7 +1,15 @@
+<?php
+  require_once "../config/config.php";
+?>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
 
@@ -62,21 +70,33 @@
     <!-- End Navbar -->
 
     <!-- Start AK -->
-      <h1 class="tittle fw-bolder">Hasil Audit Kearsipan <br>Tahun 2023</h1>
-          <div class="container">
-            <div class="box">
-                <div class="post-tittle">
-                  <h5><i class="bi bi-x-diamond-fill"></i></h5>
-                    <div class="post">
-                      <h2>Akuntabilitas Kinerja</h2>
-                      <h5>KETERANGAN</h5>
-                      <a href="" class="btn read-more">Download</a>
+    <h1 class="tittle fw-bolder">Hasil Audit Kearsipan <br>Tahun 2023</h1>
+        <div class="container">
+        <?php
+            $no = 1;
+            $query = "SELECT * FROM akuntabilitas";
+            $result = mysqli_query($con, $query);
+
+            if (mysqli_num_rows($result) > 0) {
+              while ($data = mysqli_fetch_array($result)) {
+        ?>
+                <div class="box">
+                    <div class="post-tittle">
+                      <h5><i class="bi bi-x-diamond-fill"></i></h5>
+                        <div class="post">
+                          <h2><?=$data['hal']?></h2>
+                          <h5>KETERANGAN</h5>
+                          <a href="<?=$data['link']?>" target="_blank" class="btn read-more">Download</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-          <div class="box"></div>
-          <div class="box"></div>
-        </div>
+        <?php
+              }
+            } else{
+              echo "Belum Ada Data Akuntabilitas.";
+            }
+        ?>
+      </div>
     <!-- End AK -->
 
     <!-- Start Footer -->

@@ -86,7 +86,9 @@
                                                     <td align="center"><?=$no++?>.</td>
                                                     <td align="center"><?=$data['tentang']?></td>
                                                     <td align="center">
-                                                        <?='<img src="data:image/jpeg;base64,'.base64_encode($data['file']).'"height="100" width="100"/>';?>
+                                                        <a href="data:application/pdf;base64,<?= base64_encode($data['file']); ?>" target="_blank" download="<?=$data['tentang']?>.pdf">
+                                                            Download PDF
+                                                        </a>
                                                     </td>
                                                     <td align="center">
                                                         <a href="CRUD/Peraturan/update.php?id=<?=$data['ID']?>"><i class="fa-solid fa-pen-to-square"></i></a>
@@ -96,7 +98,7 @@
                                     <?php
                                             }
                                         } else{
-                                            echo "Belum Ada Pesan Diterima.";
+                                            echo "Belum Ada Peraturan.";
                                         }
                                     ?>
                                 </tr>

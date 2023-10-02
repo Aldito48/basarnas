@@ -60,7 +60,6 @@
         <!-- Start content -->
             <section class="main">
                 <h1>Daftar Peminjaman</h1>
-                <a href="CRUD/Peminjaman/create.php">Tambahkan</a>
                 <div class="container">
                     <div class="data">
                         <table cellspacing="5px">
@@ -68,7 +67,10 @@
                                 <tr>
                                     <th>No.</th>
                                     <th>Nama Peminjam</th>
+                                    <th>E-mail</th>
+                                    <th>No. Hp</th>
                                     <th>Jenis Arsip</th>
+                                    <th>Kode Arsip</th>
                                     <th>Jumlah</th>
                                     <th>Tanggal Peminjaman</th>
                                     <th>Tanggal Pengembalian</th>
@@ -89,7 +91,10 @@
                                                 <tr>
                                                     <td align="center"><?=$no++?>.</td>
                                                     <td align="center"><?=$data['nama_peminjam']?></td>
+                                                    <td align="center"><?=$data['email']?></td>
+                                                    <td align="center"><?=$data['no_hp']?></td>
                                                     <td align="center"><?=$data['jenis_arsip']?></td>
+                                                    <td align="center"><?=$data['kode_arsip']?></td>
                                                     <td align="center"><?=$data['jumlah']?></td>
                                                     <td align="center"><?=$data['tgl_pinjam']?></td>
                                                     <td align="center"><?=$data['tgl_kembali']?></td>
@@ -102,7 +107,7 @@
                                     <?php
                                             }
                                         } else{
-                                            echo "Belum Ada Pesan Diterima.";
+                                            echo "Belum Ada Ajuan Peminjaman.";
                                         }
                                     ?>
                                 </tr>
