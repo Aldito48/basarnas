@@ -25,6 +25,9 @@
         <!-- Font -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
+        <!-- favicon -->
+        <link rel="shortcut icon" href="../assets/img/anri.ico" type="image/x-icon">
+        
     </head>
     <body>
         <!-- Start Sidebar -->

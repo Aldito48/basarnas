@@ -23,6 +23,9 @@
         <!-- Font -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
+        <!-- favicon -->
+        <link rel="shortcut icon" href="../../../assets/img/anri.ico" type="image/x-icon">
+
     </head>
     <body>
         <!-- Start Sidebar -->
@@ -56,17 +59,17 @@
         <!-- End Sidebar -->
 
         <!-- Start content -->
-            <section class="main">
+            <section class="main"> 
                 <h1>Tambah Akuntabilitas Kinerja</h1>
                 <div class="content">
                     <form action="proses.php" method="POST">
-                        <div>
+                        <div class="box">
                             <label for="hal">Hal</label>
-                            <input type="text" id="hal" name="hal" placeholder="Hal..." required autofocus>
+                            <input class="input" type="text" id="hal" name="hal" placeholder="Hal..." required autofocus>
                         </div>
-                        <div>
+                        <div class="box">
                             <label for="link">Link</label>
-                            <input type="text" id="link" name="link" placeholder="Link..." required>
+                            <input class="input" type="text" id="link" name="link" placeholder="Link..." required>
                         </div>
                         <div class="tmbl1">
                             <input type="submit" name="add" value="Simpan">

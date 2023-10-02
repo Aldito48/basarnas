@@ -117,28 +117,63 @@ header h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 15rem;
   flex-direction: column;
 }
 .main h1 {
   color: rgba(0, 0, 0, 0.8);
   font-size: 50px;
   text-align: center;
-  padding: 20px 0 0 0 ;
+  padding: 20px 0 0 0;
+}
+.page{
+  margin-bottom: 15px;
+}
+.page a{
+  background: var(--color-default);
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 5px 15px 5px 15px;
+  text-decoration: none;
+  color: var(--color-body);
+  cursor: pointer;
+}
+.page a:hover{
+  background: var(--color-text);
 }
 table {
   width: 100%;
+  border: 2px solid var(--color-brown);
 }
 table td {
-  border-radius: 5px;
   text-align: center;
-  background-color: var(--color-body);
+  border: 2px solid var(--color-brown);
   color: var(--color-black);
 }
-table th{
-  border-radius: 5px;
+table tr a{
+  text-decoration: none;
+  color: var(--color-black);
+}
+table tr a:hover{
+  color: var(--color-default);
+}
+table th {
   text-align: center;
-  background-color: var(--color-black);
+  border: 2px solid var(--color-brown);
   color: var(--color-body);
+  background: var(--color-default);
+}
+table th.no{
+  width: 150px;
+}
+table th.jenis{
+  width: 500px;
+}
+table th.link{
+  width: 400px;
+}
+table th.crud{
+  width: 350px;
 }
 
 @media (max-width: 900px) {
@@ -148,3 +183,35 @@ table th{
   }
 }
 
+/* Create */
+.content{
+  margin-left: 15rem;
+  width: 80%;
+  padding: 20px;
+  color: var(--color-body);
+}
+.content form{
+  background: var(--color-text);
+  width: 600px;
+  padding: 20px;
+}
+.content form .box{
+  padding: 10px;
+}
+.content form .box label{
+  padding: 10px 15px 10px 10px;
+  position: relative;
+  width: 50px;
+  height: 10px;
+}
+.content form .box .input{
+  margin-top: 10px;
+  margin-left: 60px;
+  justify-content: right;
+  width: 400px;
+  height: 30px;
+}
+.content form .tmbl1{
+  padding: 20px 35px 20px 10px;
+  text-align: right;
+}

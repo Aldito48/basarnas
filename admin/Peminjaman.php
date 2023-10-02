@@ -25,6 +25,9 @@
         <!-- Font -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
+        <!-- favicon -->
+        <link rel="shortcut icon" href="../assets/img/anri.ico" type="image/x-icon">
+        
     </head>
     <body>
         <!-- Start Sidebar -->
@@ -63,19 +66,19 @@
                 <div class="container">
                     <div class="data">
                         <table cellspacing="5px">
-                            <thead>
+                            <thead> 
                                 <tr>
-                                    <th>No.</th>
-                                    <th>Nama Peminjam</th>
-                                    <th>E-mail</th>
-                                    <th>No. Hp</th>
-                                    <th>Jenis Arsip</th>
-                                    <th>Kode Arsip</th>
-                                    <th>Jumlah</th>
-                                    <th>Tanggal Peminjaman</th>
-                                    <th>Tanggal Pengembalian</th>
-                                    <th>Status</th>
-                                    <th><i class="fa-solid fa-gear"></i></th>
+                                    <th class="no">NO</th>
+                                    <th class="nama">NAMA PEMINJAM</th>
+                                    <th class="email">E-MAIL</th>
+                                    <th class="hp">NO.HP</th>
+                                    <th class="jenis">JENIS ARSIP</th>
+                                    <th class="kode">KODE ARSIP</th>
+                                    <th class="jumlah">JUMLAH</th>
+                                    <th class="tpeminjam">TGL PEMINJAMAN</th>
+                                    <th class="tpengembalian">TGL PENGEMBALIAN</th>
+                                    <th class="status">STATUS</th>
+                                    <th class="crud"><i class="fa-solid fa-gear"></i></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -88,7 +91,7 @@
                                         if (mysqli_num_rows($result) > 0) {
                                             while ($data = mysqli_fetch_array($result)) {
                                     ?>
-                                                <tr>
+                                                <tr> 
                                                     <td align="center"><?=$no++?>.</td>
                                                     <td align="center"><?=$data['nama_peminjam']?></td>
                                                     <td align="center"><?=$data['email']?></td>

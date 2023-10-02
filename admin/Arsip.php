@@ -25,6 +25,9 @@
         <!-- Font -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
+        <!-- favicon -->
+        <link rel="shortcut icon" href="../assets/img/anri.ico" type="image/x-icon">
+        
     </head>
     <body>
         <!-- Start Sidebar -->
@@ -60,16 +63,18 @@
         <!-- Start content -->
             <section class="main">
                 <h1>Data Arsip</h1>
-                <a href="CRUD/Arsip/create.php">Tambahkan</a>
+                <div class="page">
+                    <a href="CRUD/Arsip/create.php">Tambahkan</a>
+                </div>
                 <div class="container">
                     <div class="data">
                         <table cellspacing="6" cellpadding="5">
                             <thead>
                                 <tr>
-                                    <th>No.</th>
-                                    <th>Jenis</th>
-                                    <th>Link</th>
-                                    <th><i class="fa-solid fa-gear"></i></th>
+                                    <th class="no">NO</th>
+                                    <th class="jenis">JENIS ARSIP</th>
+                                    <th class="link">STATUS</th>
+                                    <th class="crud"><i class="fa-solid fa-gear"></i></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -85,7 +90,7 @@
                                                 <tr>
                                                     <td align="center"><?=$no++?>.</td>
                                                     <td align="center"><?=$data['jenis']?></td>
-                                                    <td><a href="<?=$data['link']?>" target="_blank">link</a></td>
+                                                    <td><a href="<?=$data['link']?>" target="_blank">Open</a></td>
                                                     <td align="center">
                                                         <a href="CRUD/Arsip/update.php?id=<?=$data['ID']?>"><i class="fa-solid fa-pen-to-square"></i></a>
                                                         <a href="CRUD/Arsip/delete.php?id=<?=$data['ID']?>" onclick="return confirm('Apakah Yakin Ingin Dihapus?')"><i class="fa-solid fa-trash"></i></a>

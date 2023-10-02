@@ -25,6 +25,9 @@
         <!-- Font -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
+        <!-- favicon -->
+        <link rel="shortcut icon" href="../assets/img/anri.ico" type="image/x-icon">
+        
     </head>
     <body>
         <!-- Start Sidebar -->
@@ -60,16 +63,18 @@
         <!-- Start content -->
             <section class="main">
                 <h1>Galeri</h1>
-                <a href="CRUD/Galeri/create.php">Tambahkan</a>
+                <div class="page">
+                    <a href="CRUD/Galeri/create.php">Tambahkan</a>
+                </div>
                 <div class="container">
                     <div class="data">
                         <table cellspacing="5px">
                             <thead>
                                 <tr>
-                                    <th>No.</th>
-                                    <th>Caption</th>
-                                    <th>Gambar</th>
-                                    <th><i class="fa-solid fa-gear"></i></th>
+                                    <th class="no">NO</th>
+                                    <th class="caption">CAPTION</th>
+                                    <th class="gambar">GAMBAR</th>
+                                    <th class="crud"><i class="fa-solid fa-gear"></i></th>
                                 </tr>
                             </thead>
                             <tbody>

@@ -118,28 +118,77 @@ header h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 15rem;
   flex-direction: column;
 }
 .main h1 {
   color: rgba(0, 0, 0, 0.8);
   font-size: 50px;
   text-align: center;
-  padding: 20px 0 0 0 ;
+  padding: 20px 0 0 0;
+}
+.page{
+  margin-bottom: 15px;
+}
+.page a{
+  background: var(--color-default);
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 5px 15px 5px 15px;
+  text-decoration: none;
+  color: var(--color-body);
+  cursor: pointer;
+}
+.page a:hover{
+  background: var(--color-text);
 }
 table {
   width: 100%;
+  border: 2px solid var(--color-brown);
 }
 table td {
-  border-radius: 5px;
   text-align: center;
-  background-color: var(--color-body);
+  border: 2px solid var(--color-brown);
   color: var(--color-black);
 }
-table th{
-  border-radius: 5px;
+table th {
   text-align: center;
-  background-color: var(--color-black);
+  border: 2px solid var(--color-brown);
   color: var(--color-body);
+  background: var(--color-default);
+}
+table th.no{
+  width: 100px;
+}
+table th.nama{
+  width: 500px;
+}
+table th.email{
+  width: 400px;
+}
+table th.hp{
+  width: 350px;
+}
+table th.jenis{
+  width: 500px;
+}
+table th.kode{
+  width: 350px;
+}
+table th.jumlah{
+  width: 80px;
+}
+table th.tpeminjam{
+  width: 200px;
+}
+table th.tpengembalian{
+  width: 200px;
+}
+table th.status{
+  width: 200px;
+}
+table th.crud{
+  width: 50px;
 }
 
 @media (max-width: 900px) {
@@ -148,4 +197,5 @@ table th{
     line-height: 60px;
   }
 }
+
 

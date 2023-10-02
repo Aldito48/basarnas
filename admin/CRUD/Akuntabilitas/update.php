@@ -23,6 +23,9 @@
         <!-- Font -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
+        <!-- favicon -->
+        <link rel="shortcut icon" href="../../../assets/img/anri.ico" type="image/x-icon">
+        
     </head>
     <body>
         <!-- Start Sidebar -->
@@ -65,14 +68,14 @@
                         $data = mysqli_fetch_array($sql_akuntabilitas);
                     ?>
                     <form action="proses.php" method="POST">
-                        <div>
+                        <div class="box">
                             <label for="hal">Hal</label>
-                            <input type="hidden" name="id" value="<?=$data['ID']?>">
-                            <input type="text" id="hal" name="hal" value="<?=$data['hal']?>" placeholder="Hal..." required autofocus>
+                            <input class="input" type="hidden" name="id" value="<?=$data['ID']?>">
+                            <input class="input" type="text" id="hal" name="hal" value="<?=$data['hal']?>" placeholder="Hal..." required autofocus>
                         </div>
-                        <div>
+                        <div class="box">
                             <label for="link">Link</label>
-                            <input type="text" id="link" name="link" value="<?=$data['link']?>" placeholder="Link..." required>
+                            <input class="input" type="text" id="link" name="link" value="<?=$data['link']?>" placeholder="Link..." required>
                         </div>
                         <div class="tmbl1">
                             <input type="submit" name="edit" value="Simpan">

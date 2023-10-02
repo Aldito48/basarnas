@@ -25,6 +25,9 @@
         <!-- Font -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
+        <!-- favicon -->
+        <link rel="shortcut icon" href="../assets/img/anri.ico" type="image/x-icon">
+
     </head>
     <body>
         <!-- Start Sidebar -->
@@ -60,16 +63,18 @@
         <!-- Start content -->
             <div class="main">
                 <h1>Akuntabilitas Kinerja</h1>
-                <a href="CRUD/Akuntabilitas/create.php">Tambahkan</a>
+                <div class="page">
+                    <a href="CRUD/Akuntabilitas/create.php">Tambahkan</a>
+                </div>
                 <div class="container">
                     <div class="data">
                         <table>
                             <thead>
-                                <tr>
-                                    <th>No.</th>
-                                    <th>Hal</th>
-                                    <th>Link</th>
-                                    <th><i class="fa-solid fa-gear"></i></th>
+                                <tr> 
+                                    <th class="no">NO</th>
+                                    <th class="hal">HAL</th>
+                                    <th class="link">STATUS</th>
+                                    <th class="crud"><i class="fa-solid fa-gear"></i></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -85,7 +90,7 @@
                                                 <tr>
                                                     <td align="center"><?=$no++?>.</td>
                                                     <td align="center"><?=$data['hal']?></td>
-                                                    <td><a href="<?=$data['link']?>" target="_blank">link</a></td>
+                                                    <td><a href="<?=$data['link']?>" target="_blank">Open</a></td>
                                                     <td align="center">
                                                         <a href="CRUD/Akuntabilitas/update.php?id=<?=$data['ID']?>"><i class="fa-solid fa-pen-to-square"></i></a>
                                                         <a href="CRUD/Akuntabilitas/delete.php?id=<?=$data['ID']?>" onclick="return confirm('Yakin Mau Dihapus Nich ☹️')"><i class="fa-solid fa-trash"></i></a>
