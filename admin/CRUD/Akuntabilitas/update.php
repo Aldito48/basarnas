@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 
         <!-- CSS -->
-        <link rel="stylesheet" href="../../CSS/akuntabilitas.css">
+        <link rel="stylesheet" href="CSS/admin.css">
 
         <!-- Font -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
@@ -57,28 +57,8 @@
 
         <!-- Start content -->
             <section class="main">
-                <h1>Ubah Akuntabilitas Kinerja</h1>
-                <div class="content"> 
-                    <?php
-                        $id = @$_GET['id'];
-                        $sql_akuntabilitas = mysqli_query($con, "SELECT * FROM akuntabilitas WHERE ID = '$id'") or die (mysqli_error($con));
-                        $data = mysqli_fetch_array($sql_akuntabilitas);
-                    ?>
-                    <form action="proses.php" method="POST">
-                        <div>
-                            <label for="hal">Hal</label>
-                            <input type="hidden" name="id" value="<?=$data['ID']?>">
-                            <input type="text" id="hal" name="hal" value="<?=$data['hal']?>" placeholder="Hal..." required autofocus>
-                        </div>
-                        <div>
-                            <label for="link">Link</label>
-                            <input type="text" id="link" name="link" value="<?=$data['link']?>" placeholder="Link..." required>
-                        </div>
-                        <div class="tmbl1">
-                            <input type="submit" name="edit" value="Simpan">
-                        </div>
-                    </form>
-                </div>
+                <h1>Akuntabilitas Kinerja</h1>
+                <p>Ubah Data</p>
             </section>
         <!-- End Content -->
 

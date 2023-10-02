@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 
         <!-- CSS -->
-        <link rel="stylesheet" href="../../CSS/peraturan.css">
+        <link rel="stylesheet" href="CSS/admin.css">
 
         <!-- Font -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
@@ -57,34 +57,7 @@
 
         <!-- Start content -->
             <section class="main">
-                <h1>Ubah Peraturan</h1>
-                <div class="content">
-                    <?php
-                        $id = @$_GET['id'];
-                        $sql_peraturan = mysqli_query($con, "SELECT * FROM peraturan WHERE ID = '$id'") or die (mysqli_error($con));
-                        $data = mysqli_fetch_array($sql_peraturan);
-                        if($data){
-                    ?>
-                            <form action="proses.php" method="POST" enctype="multipart/form-data">
-                                <div>
-                                    <label for="tentang">Tentang</label>
-                                    <input type="hidden" name="id" value="<?=$data['ID']?>">
-                                    <input type="text" id="tentang" name="tentang" value="<?=$data['tentang']?>" placeholder="Jenis..." required autofocus>
-                                </div>
-                                <div>
-                                    <label for="file">File</label>
-                                    <input type="file" name="file" class="file" required>
-                                </div>
-                                <div class="tmbl1">
-                                    <input type="submit" name="edit" value="Simpan">
-                                </div>
-                            </form>
-                    <?php
-                        } else{
-                            echo "<script>alert('Data Anda Tidak Terdaftar Dalam Sistem');</script>";
-                        }
-                    ?>
-                </div>
+                <h1>Peraturan</h1>
             </section>
         <!-- End Content -->
 

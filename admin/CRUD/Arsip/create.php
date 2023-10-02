@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 
         <!-- CSS -->
-        <link rel="stylesheet" href="../../CSS/arsip.css">
+        <link rel="stylesheet" href="CSS/admin.css">
 
         <!-- Font -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
@@ -57,22 +57,8 @@
 
         <!-- Start content -->
             <section class="main">
-                <h1>Tambah Data Arsip</h1>
-                <div class="content">
-                    <form action="proses.php" method="POST">
-                        <div>
-                            <label for="jenis">Jenis</label>
-                            <input type="text" id="jenis" name="jenis" placeholder="Jenis..." required autofocus>
-                        </div>
-                        <div>
-                            <label for="link">Link</label>
-                            <input type="text" id="link" name="link" placeholder="Link..." required>
-                        </div>
-                        <div class="tmbl1">
-                            <input type="submit" name="add" value="Simpan">
-                        </div>
-                    </form>
-                </div>
+                <h1>Data Arsip</h1>
+                
             </section>
         <!-- End Content -->
 

@@ -17,7 +17,6 @@
 }
 body {
   min-height: 100vh;
-  background: var(--color-body);
   background-size: cover;
   background-position: center;
 }
@@ -56,14 +55,13 @@ img {
 .side-bar.active {
   left: 0;
 }
-header h1 {
+h1 {
   text-align: center;
   font-weight: 500;
   font-size: 25px;
   padding-bottom: 13px;
   font-family: sans-serif;
   letter-spacing: 2px;
-  color: var(--color-body);
 }
 .side-bar .menu {
   width: 100%;
@@ -121,7 +119,7 @@ header h1 {
   flex-direction: column;
 }
 .main h1 {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.8);s
   font-size: 50px;
   text-align: center;
   padding: 20px 0 0 0 ;
