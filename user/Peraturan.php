@@ -84,7 +84,6 @@
                     <h5><i class="bi bi-x-diamond-fill"></i></h5>
                       <div class="post">
                         <h2><?=$data['tentang']?></h2>
-                        <h5>KETERANGAN</h5>
                         <a href="data:application/pdf;base64,<?= base64_encode($data['file']); ?>" target="_blank" download="<?=$data['tentang']?>.pdf" class="btn read-more">Download</a>
                       </div>
                   </div>

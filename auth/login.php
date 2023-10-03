@@ -1,7 +1,7 @@
 <?php
     require_once "../config/config.php";
     if(isset($_SESSION['Username'])) {
-        echo "<script>window.location='../admin/dashboard.php';</script>";
+        echo "<script>window.location='../admin/Arsip.php';</script>";
     } else {
 ?>
 <!DOCTYPE html>
@@ -9,17 +9,25 @@
     <head>
         <title>ANRI | ADMIN</title>
         <meta charset="utf-8"/>
-        <link rel="icon" href="IMG/favicon.png" type="image/x-icon">
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="../assets/img/anri.ico" type="image/x-icon">
+
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
         <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-        <link rel="stylesheet" type="text/css" href="../assets/CSS/styleLogin.css">
+
+        <link rel="stylesheet" type="text/css" href="../admin/CSS/login.css">
+
         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
         <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-        <script src="jquery.js"></script>
-        <script src="js/scriptLoginAdmin.js"></script>
     </head>
     <body>
         <div id="Card">
@@ -35,7 +43,7 @@
                         $sql_login = mysqli_query($con, "SELECT * FROM admin WHERE Username = '$username' AND Password = '$pass'") or die (mysqli_error($con));
                         if(mysqli_num_rows($sql_login) > 0){
                             $_SESSION['Username'] = $username;
-                            echo "<script>window.location='../admin/dashboard.php';</script>";
+                            echo "<script>window.location='../admin/Arsip.php';</script>";
                         } else{ ?>
                             <div class="login-rejected" id="login-rejected">
                                 <button onclick="closeDiv()">X</button>

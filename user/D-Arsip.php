@@ -70,7 +70,7 @@
     <!-- End Navbar -->
 
     <!-- Start Arsip -->
-      <section id="arsip">
+      <section id="arsip"> 
         <main class="table">
           <section class="table__header">
             <h1>Daftar Arsip</h1>

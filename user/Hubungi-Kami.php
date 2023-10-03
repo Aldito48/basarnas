@@ -69,12 +69,12 @@
       </header>
     <!-- End Navbar -->
 
-    <!-- Start Contact -->
+    <!-- Start Contact --> 
       <section id="contact">
         <div class="cover">
             <div class="box">
                 <p>Email : </p>
-                <p><a href="mailto:emailnya">arsipariskansarmedan@gmail.com</a></p>
+                <p><a href="mailto:arsipariskansarmedan@gmail.com">arsipariskansarmedan@gmail.com</a></p>
             </div> 
             <div class="box">
                 <p>Alamat : </p>

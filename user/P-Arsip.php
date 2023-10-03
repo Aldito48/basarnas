@@ -71,9 +71,9 @@
 
     <!-- Content (Start) -->
       <section id="content">
-        <form method="POST">
+        <form method="POST" action="formLayanan.php">
             <div class="wrapper">
-                <div class="title">
+                <div class="title"> 
                   Peminjaman Arsip
                 </div>
                 <div class="form">
@@ -99,7 +99,7 @@
                     </div>
                     <div class="input_field">
                         <label for="jumlah">Jumlah Arsip</label>
-                        <input type="number" id="jumlah" name="jumlah" class="input" required>
+                        <input type="number" id="jumlah" name="jumlah" class="input" min="0" required>
                     </div>
                     <div class="input_field">
                         <label for="tgl_pinjam">Tanggal Pinjam</label>
@@ -115,43 +115,6 @@
                 </div>
             </div>
         </form>
-        <?php
-          if(isset($_POST['Kirim'])){
-            $np = trim(mysqli_real_escape_string($con, $_POST['nama_peminjam']));
-            $email = trim(mysqli_real_escape_string($con, $_POST['email']));
-            $hp = trim(mysqli_real_escape_string($con, $_POST['no_hp']));
-            $ja = trim(mysqli_real_escape_string($con, $_POST['jenis_arsip']));
-            $ka = trim(mysqli_real_escape_string($con, $_POST['kode_arsip']));
-            $jumlah = trim(mysqli_real_escape_string($con, $_POST['jumlah']));
-            $pinjam = trim(mysqli_real_escape_string($con, $_POST['tgl_pinjam']));
-            $balik = trim(mysqli_real_escape_string($con, $_POST['tgl_kembali']));
-            mysqli_query($con, "INSERT INTO peminjaman (ID, nama_peminjam, email, no_hp, jenis_arsip, kode_arsip, jumlah, tgl_pinjam, tgl_kembali) VALUES ('', '$np', '$email', '$hp', '$ja', '$ka', '$jumlah', '$pinjam', '$balik')") or die (mysqli_error($con));
-            echo "<script>window.location='P-Arsip.php';</script>";
-          }
-
-          if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $np = $_POST["nama_peminjam"];
-            $email = $_POST["email"];
-            $hp = $_POST["no_hp"];
-            $ja = $_POST["jenis_arsip"];
-            $ka = $_POST["kode_arsip"];
-            $jumlah = $_POST['jumlah'];
-            $pinjam = $_POST["tgl_pinjam"];
-            $balik = $_POST["tgl_balik"];
-    
-            $to = "arsipariskansar@gmail.com";
-            $subject = "Pesan Ajuan Peminjaman";
-            $message = "Nama Peminjam: $np\nE-mail: $email\nNo. Hp: $hp\nJenis Arsip: $ja\nKode Arsip: $ka\nJumlah: $jumlah\nTanggal Peminjaman: $pinjam\nTanggal Pengembalian: $balik";
-    
-            $headers = "From: $email";
-    
-            if (mail($to, $subject, $message, $headers)) {
-                echo "<script>alert('Berhasil Mengirim Pesan');</script>";
-            } else {
-                echo "<script>alert('Gagal Mengirim Pesan');</script>";
-            }
-          }
-        ?>
       </section>
     <!-- Content (End) -->
 

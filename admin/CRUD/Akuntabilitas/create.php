@@ -42,7 +42,6 @@
                         <h1>Arsip Nasional</h1>
                 </header>
                 <div class="menu">
-                    <div class="item"><a href="../../Dashboard.php"><i class="bi bi-display"></i>Dashboard</a></div>
                     <div class="item"><a href="../../Arsip.php"><i class="bi bi-folder"></i>Data Arsip</a></div>
                     <div class="item"><a href="../../Peminjaman.php"><i class="bi bi-inboxes"></i></i>Daftar Pinjaman</a></div>
                     <div class="item">

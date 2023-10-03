@@ -85,7 +85,6 @@
                       <h5><i class="bi bi-x-diamond-fill"></i></h5>
                         <div class="post">
                           <h2><?=$data['hal']?></h2>
-                          <h5>KETERANGAN</h5>
                           <a href="<?=$data['link']?>" target="_blank" class="btn read-more">Download</a>
                         </div>
                     </div>
