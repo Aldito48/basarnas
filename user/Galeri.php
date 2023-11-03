@@ -77,7 +77,7 @@
       <div class="container"> 
         <h1>Dokumentasi Arsip Kantor Pencarian dan Pertolongan Kelas A Medan</h1>
         <div class="top-content">
-          <h3>Foto Galeri</h3>
+          <h3>Foto Galeri</h3> 
           <label>DOKUMENTASI GALERI</label>
         </div>
         <div class="photo-gallery">
@@ -96,7 +96,7 @@
                   </a>
           <?php
                 }
-              } else{
+              } else{ 
                 echo "Belum Ada Foto.";
             }
           ?>
