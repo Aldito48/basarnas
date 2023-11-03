@@ -333,6 +333,7 @@ header .navigation .menu{
   line-height: 1.5;
   padding: 0px 10px;
   margin-left: 15px;
+  text-align: left;
   margin-bottom: 20px;
   font-family: sans-serif;
   border: none;
@@ -362,6 +363,16 @@ header .navigation .menu{
   }
   #tree img{
     max-width: 80vw;
+  }
+  .content-section{
+    flex-direction: column;
+  }
+  .content-section .card{
+    height: 500px;
+  }
+  .content-section .card img{
+    max-height: 60vh;
+    height: 440px;
   }
 }
 
@@ -412,6 +423,10 @@ header .navigation .menu{
   .content-section .card img{
     max-height: 60vh;
     height: 440px;
+  }
+  #info{
+    max-width: 80vw;
+    margin: 50px 0 0 40px;
   }
 }
 

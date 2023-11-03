@@ -17,6 +17,7 @@
 }
 body {
   min-height: 100vh;
+  background: var(--color-body);
   background-size: cover;
   background-position: center;
 }
@@ -55,13 +56,14 @@ img {
 .side-bar.active {
   left: 0;
 }
-h1 {
+header h1 {
   text-align: center;
   font-weight: 500;
   font-size: 25px;
   padding-bottom: 13px;
   font-family: sans-serif;
   letter-spacing: 2px;
+  color: var(--color-body);
 }
 .side-bar .menu {
   width: 100%;
@@ -116,20 +118,77 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 15rem;
   flex-direction: column;
 }
 .main h1 {
   color: rgba(0, 0, 0, 0.8);
   font-size: 50px;
   text-align: center;
-  padding: 20px 0 0 0 ;
+  padding: 20px 0 0 0;
 }
-.table{
-  border: 0;
+.page{
+  margin-bottom: 15px;
 }
-.table td{
-  background-color: black;
+.page a{
+  background: var(--color-default);
+  font-size: 20px;
   border-radius: 5px;
+  padding: 5px 15px 5px 15px;
+  text-decoration: none;
+  color: var(--color-body);
+  cursor: pointer;
+}
+.page a:hover{
+  background: var(--color-text);
+}
+table {
+  width: 100%;
+  border: 2px solid var(--color-brown);
+}
+table td {
+  text-align: center;
+  border: 2px solid var(--color-brown);
+  color: var(--color-black);
+}
+table th {
+  text-align: center;
+  border: 2px solid var(--color-brown);
+  color: var(--color-body);
+  background: var(--color-default);
+}
+table th.no{
+  width: 100px;
+}
+table th.nama{
+  width: 500px;
+}
+table th.email{
+  width: 400px;
+}
+table th.hp{
+  width: 350px;
+}
+table th.jenis{
+  width: 500px;
+}
+table th.kode{
+  width: 350px;
+}
+table th.jumlah{
+  width: 80px;
+}
+table th.tpeminjam{
+  width: 200px;
+}
+table th.tpengembalian{
+  width: 200px;
+}
+table th.status{
+  width: 200px;
+}
+table th.crud{
+  width: 50px;
 }
 
 @media (max-width: 900px) {
@@ -138,4 +197,5 @@ h1 {
     line-height: 60px;
   }
 }
+
 

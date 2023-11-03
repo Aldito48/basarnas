@@ -25,6 +25,9 @@
         <!-- Font -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
+        <!-- favicon -->
+        <link rel="shortcut icon" href="../assets/img/anri.ico" type="image/x-icon">
+        
     </head>
     <body>
         <!-- Start Sidebar -->
@@ -41,7 +44,6 @@
                         <h1>Arsip Nasional</h1>
                 </header>
                 <div class="menu">
-                    <div class="item"><a href="Dashboard.php"><i class="bi bi-display"></i>Dashboard</a></div>
                     <div class="item"><a href="Arsip.php"><i class="bi bi-folder"></i>Data Arsip</a></div>
                     <div class="item"><a href="Peminjaman.php"><i class="bi bi-inboxes"></i></i>Daftar Pinjaman</a></div>
                     <div class="item">
@@ -60,20 +62,22 @@
         <!-- Start content -->
             <section class="main">
                 <h1>Daftar Peminjaman</h1>
-                <a href="CRUD/Peminjaman/create.php">Tambahkan</a>
                 <div class="container">
                     <div class="data">
                         <table cellspacing="5px">
-                            <thead>
+                            <thead> 
                                 <tr>
-                                    <th>No.</th>
-                                    <th>Nama Peminjam</th>
-                                    <th>Jenis Arsip</th>
-                                    <th>Jumlah</th>
-                                    <th>Tanggal Peminjaman</th>
-                                    <th>Tanggal Pengembalian</th>
-                                    <th>Status</th>
-                                    <th><i class="fa-solid fa-gear"></i></th>
+                                    <th class="no">NO</th>
+                                    <th class="nama">NAMA PEMINJAM</th>
+                                    <th class="email">E-MAIL</th>
+                                    <th class="hp">NO.HP</th>
+                                    <th class="jenis">JENIS ARSIP</th>
+                                    <th class="kode">KODE ARSIP</th>
+                                    <th class="jumlah">JUMLAH</th>
+                                    <th class="tpeminjam">TGL PEMINJAMAN</th>
+                                    <th class="tpengembalian">TGL PENGEMBALIAN</th>
+                                    <th class="status">STATUS</th>
+                                    <th class="crud"><i class="fa-solid fa-gear"></i></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -86,10 +90,13 @@
                                         if (mysqli_num_rows($result) > 0) {
                                             while ($data = mysqli_fetch_array($result)) {
                                     ?>
-                                                <tr>
+                                                <tr> 
                                                     <td align="center"><?=$no++?>.</td>
                                                     <td align="center"><?=$data['nama_peminjam']?></td>
+                                                    <td align="center"><?=$data['email']?></td>
+                                                    <td align="center"><?=$data['no_hp']?></td>
                                                     <td align="center"><?=$data['jenis_arsip']?></td>
+                                                    <td align="center"><?=$data['kode_arsip']?></td>
                                                     <td align="center"><?=$data['jumlah']?></td>
                                                     <td align="center"><?=$data['tgl_pinjam']?></td>
                                                     <td align="center"><?=$data['tgl_kembali']?></td>
@@ -102,7 +109,7 @@
                                     <?php
                                             }
                                         } else{
-                                            echo "Belum Ada Pesan Diterima.";
+                                            echo "Belum Ada Ajuan Peminjaman.";
                                         }
                                     ?>
                                 </tr>

@@ -25,6 +25,9 @@
         <!-- Font -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
+        <!-- favicon -->
+        <link rel="shortcut icon" href="../assets/img/anri.ico" type="image/x-icon">
+        
     </head>
     <body>
         <!-- Start Sidebar -->
@@ -41,7 +44,6 @@
                         <h1>Arsip Nasional</h1>
                 </header>
                 <div class="menu">
-                    <div class="item"><a href="Dashboard.php"><i class="bi bi-display"></i>Dashboard</a></div>
                     <div class="item"><a href="Arsip.php"><i class="bi bi-folder"></i>Data Arsip</a></div>
                     <div class="item"><a href="Peminjaman.php"><i class="bi bi-inboxes"></i></i>Daftar Pinjaman</a></div>
                     <div class="item">
@@ -60,16 +62,18 @@
         <!-- Start content -->
             <section class="main">
                 <h1>Peraturan</h1>
-                <a href="CRUD/Peraturan/create.php">Tambahkan</a>
+                <div class="page">
+                    <a href="CRUD/Peraturan/create.php">Tambahkan</a>
+                </div>
                 <div class="container">
                     <div class="data">
                         <table cellspacing="5px">
                             <thead>
                                 <tr>
-                                    <th>No.</th>
-                                    <th>Tentang</th>
-                                    <th>File</th>
-                                    <th><i class="fa-solid fa-gear"></i></th>
+                                    <th class="no">NO</th>
+                                    <th class="tentang">TENTANG</th>
+                                    <th class="file">FILE</th>
+                                    <th class="crud"><i class="fa-solid fa-gear"></i></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -86,7 +90,9 @@
                                                     <td align="center"><?=$no++?>.</td>
                                                     <td align="center"><?=$data['tentang']?></td>
                                                     <td align="center">
-                                                        <?='<img src="data:image/jpeg;base64,'.base64_encode($data['file']).'"height="100" width="100"/>';?>
+                                                        <a href="data:application/pdf;base64,<?= base64_encode($data['file']); ?>" target="_blank" download="<?=$data['tentang']?>.pdf">
+                                                            Download PDF
+                                                        </a>
                                                     </td>
                                                     <td align="center">
                                                         <a href="CRUD/Peraturan/update.php?id=<?=$data['ID']?>"><i class="fa-solid fa-pen-to-square"></i></a>
@@ -96,7 +102,7 @@
                                     <?php
                                             }
                                         } else{
-                                            echo "Belum Ada Pesan Diterima.";
+                                            echo "Belum Ada Peraturan.";
                                         }
                                     ?>
                                 </tr>

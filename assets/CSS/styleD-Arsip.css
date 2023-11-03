@@ -178,28 +178,28 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 main.table {
   margin-left: 5rem;
   width: 82vw;
-  height: 90vh;
+  height: auto;
   background-color: #fff5;
+  backdrop-filter: blur(7px);
   box-shadow: 0 .4rem .8rem #0005;
   border-radius: .8rem;
   overflow: hidden;
 }
-
 .table__header {
   width: 100%;
   height: 10%;
   background-color: #fff4;
   padding: .8rem 1rem;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
+.table__header h1{
+  margin: auto;
+}
 .table__header .input-group {
   width: 35%;
   height: 100%;
@@ -235,10 +235,8 @@ main.table {
   width: 95%;
   max-height: calc(89% - 1.6rem);
   background-color: #fffb;
-
   margin: .8rem auto;
   border-radius: .6rem;
-
   overflow: auto;
   overflow: overlay;
 }
@@ -342,6 +340,10 @@ tbody tr.hide td p {
   td:not(:first-of-type) {
       min-width: 9.1rem;
   }
+  main.table {
+    margin-left: 3rem;
+    width: 82vw;
+  }
 }
 
 thead th span.icon-arrow {
@@ -400,18 +402,14 @@ thead th.active,tbody td.active {
 .export__file .export__file-options {
   position: absolute;
   right: 0;
-  
   width: 12rem;
   border-radius: .5rem;
   overflow: hidden;
   text-align: center;
-
   opacity: 0;
   transform: scale(.8);
   transform-origin: top right;
-  
   box-shadow: 0 .2rem .5rem #0004;
-  
   transition: .2s;
 }
 
@@ -588,9 +586,8 @@ footer {
       margin-left: 0;
   }
   .footer-distributed .footer-center i {
-    font-size: 25px;
+    font-size: 26px;
     padding: 10px;
-    text-align: left;
-    vertical-align: middle;
+    text-align: center;
   }
 }

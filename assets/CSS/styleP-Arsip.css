@@ -179,7 +179,7 @@ header .navigation .menu {
   margin-top: 6rem;
 }
 .wrapper {
-  max-width: 500px;
+  max-width: 400px;
   width: 100%;
   background: var(--color-text);
   margin: 20px auto;
@@ -272,16 +272,47 @@ header .navigation .menu {
   background: var(--color-box);
 }
 
-@media screen and (max-width:768px) {
+@media (max-width:768px) {
   .wrapper{
-    width: 400px;
+    width: 200px;
   }
+  .wrapper .form{
+    width: 110%;
+  }
+  .wrapper .title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .wrapper .form .input_field {
+    margin-bottom: 15px;
+  }
+  .wrapper .form .input_field label {
+    width: 100px;
+    font-weight: 700;
+    margin-right: 5px;
+    font-size: 12px;
+  }
+  .wrapper .form .input_field .input,
+  .wrapper .form .input_field .textarea {
+  width: 200px;
+  outline: none;
+  font-size: 12px;
+  padding: 6px 8px;
+  border-radius: 3px;
+  }
+  .wrapper .form .input_field .btn {
+  width: 90%;
+}
 }
 @media screen and (max-width:1060px) {
   .wrapper{
-    width: 600px;
+    width: 500px;
   }
 }
+
+
+
+
 
 /* Footer */
 footer {

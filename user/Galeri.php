@@ -1,7 +1,15 @@
+<?php
+  require_once "../config/config.php";
+?>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
 
@@ -17,7 +25,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/CSS/styleGaleri.css" />
     <link rel="stylesheet" href="../assets/CSS/lightbox.css"/>
-
+    
     <!-- favicon -->
     <link rel="shortcut icon" href="../assets/img/sar.ico" type="image/x-icon">
     
@@ -69,30 +77,29 @@
       <div class="container"> 
         <h1>Dokumentasi Arsip Kantor Pencarian dan Pertolongan Kelas A Medan</h1>
         <div class="top-content">
-          <h3>Foto Galeri</h3>
+          <h3>Foto Galeri</h3> 
           <label>DOKUMENTASI GALERI</label>
         </div>
         <div class="photo-gallery">
-          <a href="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" data-lightbox="models" data-title="Caption1">
-            <div class="pic place">
-                <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg">
-            </div>
-          </a>
-          <a href="https://img.freepik.com/premium-photo/beautiful-mountain-range-reflects-tranquil-water-generative-ai_188544-9117.jpg" data-lightbox="models" data-title="Caption2">
-            <div class="pic place">
-              <img src="https://img.freepik.com/premium-photo/beautiful-mountain-range-reflects-tranquil-water-generative-ai_188544-9117.jpg">
-            </div>
-          </a>
-          <a href="https://img.freepik.com/free-photo/natures-beauty-reflected-tranquil-mountain-waters-generative-ai_188544-7867.jpg" data-lightbox="models" data-title="Caption3">
-            <div class="pic place">
-              <img src="https://img.freepik.com/free-photo/natures-beauty-reflected-tranquil-mountain-waters-generative-ai_188544-7867.jpg">
-            </div>
-          </a>
-          <a href="https://img.freepik.com/premium-photo/foggy-mountain-lake-with-reflections-surrounding-peaks-created-with-generative-ai_419341-59257.jpg" data-lightbox="models" data-title="Caption4">
-            <div class="pic place">
-              <img src="https://img.freepik.com/premium-photo/foggy-mountain-lake-with-reflections-surrounding-peaks-created-with-generative-ai_419341-59257.jpg">
-            </div>
-          </a>
+          <?php
+              $no = 1;
+              $query = "SELECT * FROM galeri";
+              $result = mysqli_query($con, $query);
+
+              if (mysqli_num_rows($result) > 0) {
+                while ($data = mysqli_fetch_array($result)) {
+          ?>
+                  <a href="<?='data:image/jpeg;base64,'.base64_encode($data['gambar']);?>" data-lightbox="models" data-title="<?=$data['caption']?>">
+                    <div class="pic place">
+                        <img src="<?='data:image/jpeg;base64,'.base64_encode($data['gambar']);?>"/>
+                    </div>
+                  </a>
+          <?php
+                }
+              } else{ 
+                echo "Belum Ada Foto.";
+            }
+          ?>
         </div>
       </div>
       </section>

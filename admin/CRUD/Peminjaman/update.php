@@ -18,11 +18,14 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 
         <!-- CSS -->
-        <link rel="stylesheet" href="CSS/admin.css">
+        <link rel="stylesheet" href="../../CSS/peminjaman.css">
 
         <!-- Font -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
+        <!-- favicon -->
+        <link rel="shortcut icon" href="../../../assets/img/anri.ico" type="image/x-icon">
+        
     </head>
     <body>
         <!-- Start Sidebar -->
@@ -39,7 +42,6 @@
                         <h1>Arsip Nasional</h1>
                 </header>
                 <div class="menu">
-                    <div class="item"><a href="../../Dashboard.php"><i class="bi bi-display"></i>Dashboard</a></div>
                     <div class="item"><a href="../../Arsip.php"><i class="bi bi-folder"></i>Data Arsip</a></div>
                     <div class="item"><a href="../../Peminjaman.php"><i class="bi bi-inboxes"></i></i>Daftar Pinjaman</a></div>
                     <div class="item">
@@ -58,6 +60,65 @@
         <!-- Start content -->
             <section class="main">
                 <h1>Daftar Peminjaman</h1>
+                <div class="content"> 
+                    <?php
+                        $id = @$_GET['id'];
+                        $sql_pinjam = mysqli_query($con, "SELECT * FROM peminjaman WHERE ID = '$id'") or die (mysqli_error($con));
+                        $data = mysqli_fetch_array($sql_pinjam);
+                    ?>
+                    <form action="proses.php" method="POST">
+                        <div>
+                            <label for="nama_peminjam">Nama Peminjam</label>
+                            <input type="hidden" name="id" value="<?=$data['ID']?>">
+                            <input type="text" id="nama_peminjam" name="nama_peminjam" value="<?=$data['nama_peminjam']?>" readonly>
+                        </div>
+                        <div>
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" value="<?=$data['email']?>" readonly>
+                        </div>
+                        <div>
+                            <label for="no_hp">No. Hp</label>
+                            <input type="text" id="no_hp" name="no_hp" value="<?=$data['no_hp']?>" readonly>
+                        </div>
+                        <div>
+                            <label for="jenis_arsip">Jenis Arsip</label>
+                            <input type="text" id="jenis_arsip" name="jenis_arsip" value="<?=$data['jenis_arsip']?>" readonly>
+                        </div>
+                        <div>
+                            <label for="kode_arsip">Kode Arsip</label>
+                            <input type="text" id="kode_arsip" name="kode_arsip" value="<?=$data['kode_arsip']?>" readonly>
+                        </div>
+                        <div>
+                            <label for="jumlah">Jumlah</label>
+                            <input type="number" id="jumlah" name="jumlah" value="<?=$data['jumlah']?>" readonly>
+                        </div>
+                        <div>
+                            <label for="tgl_pinjam">Tanggal Pinjam</label>
+                            <input type="date" id="tgl_pinjam" name="tgl_pinjam" value="<?=$data['tgl_pinjam']?>" readonly>
+                        </div>
+                        <div>
+                            <label for="tgl_kembali">Tanggal Kembali</label>
+                            <input type="date" id="tgl_kembali" name="tgl_kembali" value="<?=$data['tgl_kembali']?>" readonly>
+                        </div>
+                        <div>
+                            <label for="status">Status</label>
+                            <?php
+                                echo "<select id=\"status\" name=\"status\">
+                                    <option value=\"\" disabled selected style=\"display:none;\">Pilih</option>";
+                                    $choose = mysqli_query($con, "SHOW COLUMNS FROM `peminjaman` WHERE `field` = 'status'");
+                                    while($result = mysqli_fetch_row($choose)){
+                                        foreach(explode("','",substr($result[1],6,-2)) as $option){
+                                            echo "<option>".$option."</option>";
+                                        }
+                                    }
+                                echo "</select>";
+                            ?>
+                        </div>
+                        <div class="tmbl1">
+                            <input type="submit" name="edit" value="Simpan">
+                        </div>
+                    </form>
+                </div>
             </section>
         <!-- End Content -->
 

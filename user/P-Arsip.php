@@ -1,7 +1,15 @@
+<?php
+  require_once "../config/config.php";
+?>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
 
@@ -63,38 +71,46 @@
 
     <!-- Content (Start) -->
       <section id="content">
-        <form method="POST" action="prosesForm.php">
+        <form method="POST" action="formLayanan.php">
             <div class="wrapper">
-                <div class="title">
+                <div class="title"> 
                   Peminjaman Arsip
                 </div>
                 <div class="form">
                     <div class="input_field">
-                        <label for="Nama">Nama Peminjam</label>
-                        <input type="text" id="Nama" name="Nama" class="input" required autofocus>
+                        <label for="nama_peminjam">Nama Peminjam</label>
+                        <input type="text" id="nama_peminjam" name="nama_peminjam" class="input" placeholder="Nama Peminjam..." required autofocus>
                     </div>
                     <div class="input_field">
-                        <label for="Email">Jenis Arsip</label>
-                        <input type="text" id="Email" name="Email" class="input" required>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" class="input" placeholder="E-mail..." required autofocus>
                     </div>
                     <div class="input_field">
-                        <label for="Telp">Kode Arsip</label>
-                        <input type="text" id="Telp" name="Telp" class="input" required>
+                        <label for="no_hp">No. Hp</label>
+                        <input type="text" id="no_hp" name="no_hp" class="input" placeholder="No. Hp..." required autofocus>
                     </div>
                     <div class="input_field">
-                        <label for="Telp">Jumlah Arsip</label>
-                        <input type="number" id="Telp" name="Telp" class="input" required>
+                        <label for="jenis_arsip">Jenis Arsip</label>
+                        <input type="text" id="jenis_arsip" name="jenis_arsip" class="input" placeholder="Jenis Arsip..." required>
                     </div>
                     <div class="input_field">
-                        <label for="Telp">Tanggal Peminjam</label>
-                        <input type="date" id="Telp" name="Telp" class="input" required>
+                        <label for="kode_arsip">Kode Arsip</label>
+                        <input type="text" id="kode_arsip" name="kode_arsip" placeholder="Kode Arsip..." class="input" required>
                     </div>
                     <div class="input_field">
-                        <label for="Telp">Tanggal Peminjam</label>
-                        <input type="date" id="Telp" name="Telp" class="input" required>
+                        <label for="jumlah">Jumlah Arsip</label>
+                        <input type="number" id="jumlah" name="jumlah" class="input" min="0" required>
                     </div>
                     <div class="input_field">
-                        <input type="submit" value="Kirim" class="btn" name="submit">
+                        <label for="tgl_pinjam">Tanggal Pinjam</label>
+                        <input type="date" id="tgl_pinjam" name="tgl_pinjam" class="input" required>
+                    </div>
+                    <div class="input_field">
+                        <label for="tgl_kembali">Tanggal Kembali</label>
+                        <input type="date" id="tgl_kembali" name="tgl_kembali" class="input" required>
+                    </div>
+                    <div class="input_field">
+                        <input type="submit" value="Kirim" class="btn" id="Kirim" name="Kirim">
                     </div>
                 </div>
             </div>

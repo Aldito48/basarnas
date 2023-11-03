@@ -17,6 +17,7 @@
 }
 body {
   min-height: 100vh;
+  background: var(--color-body);
   background-size: cover;
   background-position: center;
 }
@@ -55,14 +56,14 @@ img {
 .side-bar.active {
   left: 0;
 }
-h1 {
+header h1 {
   text-align: center;
-  color: var(--color-body);
   font-weight: 500;
   font-size: 25px;
   padding-bottom: 13px;
   font-family: sans-serif;
   letter-spacing: 2px;
+  color: var(--color-body);
 }
 .side-bar .menu {
   width: 100%;
@@ -125,12 +126,20 @@ h1 {
   text-align: center;
   padding: 20px 0 0 0 ;
 }
-.table{
-  border: 0;
+table {
+  width: 100%;
 }
-.table td{
-  background-color: black;
+table td {
   border-radius: 5px;
+  text-align: center;
+  background-color: var(--color-body);
+  color: var(--color-black);
+}
+table th{
+  border-radius: 5px;
+  text-align: center;
+  background-color: var(--color-black);
+  color: var(--color-body);
 }
 
 @media (max-width: 900px) {
@@ -140,3 +149,106 @@ h1 {
   }
 }
 
+/* Akuntabilitas */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15rem;
+  flex-direction: column;
+}
+.main h1 {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 50px;
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+.page{
+  margin-bottom: 15px;
+}
+.page a{
+  background: var(--color-default);
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 5px 15px 5px 15px;
+  text-decoration: none;
+  color: var(--color-body);
+  cursor: pointer;
+}
+.page a:hover{
+  background: var(--color-text);
+}
+table {
+  width: 100%;
+  border: 2px solid var(--color-brown);
+}
+table td {
+  text-align: center;
+  border: 2px solid var(--color-brown);
+  color: var(--color-black);
+}
+table th {
+  text-align: center;
+  border: 2px solid var(--color-brown);
+  color: var(--color-body);
+  background: var(--color-default);
+}
+table td a{
+  color: var(--color-black);
+  text-decoration: none;
+}
+table td a:hover{
+  color: var(--color-default);
+}
+table th.no{
+  width: 100px;
+}
+table th.hal{
+  width: 400px;
+}
+table th.link{
+  width: 300px;
+}
+table th.crud{
+  width: 50px;
+}
+
+@media (max-width: 900px) {
+  .main h1 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
+
+/* Create */
+.content{
+  margin-left: 15rem;
+  width: 80%;
+  padding: 20px;
+  color: var(--color-body);
+}
+.content form{
+  background: var(--color-text);
+  width: 600px;
+  padding: 20px;
+}
+.content form .box{
+  padding: 10px;
+}
+.content form .box label{
+  padding: 10px 15px 10px 10px;
+  position: relative;
+  width: 50px;
+  height: 10px;
+}
+.content form .box .input{
+  margin-top: 10px;
+  margin-left: 60px;
+  justify-content: right;
+  width: 400px;
+  height: 30px;
+}
+.content form .tmbl1{
+  padding: 20px 35px 20px 10px;
+  text-align: right;
+}

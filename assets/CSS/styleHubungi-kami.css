@@ -217,9 +217,10 @@ header .navigation .menu{
     margin: 100px auto;
   }
   .box{
-    width: 310px;
-    height: 200px;
-    padding: 20px;
+    font-size: 11px;
+    width: 210px;
+    height: 140px;
+    padding: 10px;
   }
 }
  
