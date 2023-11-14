@@ -92,7 +92,7 @@
                                                     <td><a href="<?=$data['link']?>" target="_blank">Open</a></td>
                                                     <td align="center">
                                                         <a href="CRUD/Akuntabilitas/update.php?id=<?=$data['ID']?>"><i class="fa-solid fa-pen-to-square"></i></a>
-                                                        <a href="CRUD/Akuntabilitas/delete.php?id=<?=$data['ID']?>" onclick="return confirm('Yakin Mau Dihapus Nich ☹️')"><i class="fa-solid fa-trash"></i></a>
+                                                        <a href="CRUD/Akuntabilitas/delete.php?id=<?=$data['ID']?>" onclick="return confirm('Hapus?')"><i class="fa-solid fa-trash"></i></a>
                                                     </td>
                                                 </tr>
                                     <?php
