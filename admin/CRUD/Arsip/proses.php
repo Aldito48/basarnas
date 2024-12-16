@@ -5,13 +5,27 @@
         if(isset($_POST['add'])){
             $jenis = trim(mysqli_real_escape_string($con, $_POST['jenis']));
             $link = trim(mysqli_real_escape_string($con, $_POST['link']));
-            mysqli_query($con, "INSERT INTO arsipan (ID, jenis, link) VALUES ('', '$jenis', '$link')") or die (mysqli_error($con));
-            echo "<script>window.location='../../Arsip.php';</script>";
+            $query = "INSERT INTO arsipan (jenis, link) VALUES ('$jenis', '$link')";
+            if (mysqli_query($con, $query)) {
+                echo "<script>alert('Data berhasil disimpan!');</script>";
+                echo "<script>window.location='../../Arsip.php';</script>";
+            } else {
+                echo "<script>alert('Data gagal disimpan!');</script>";
+                echo "<script>window.location='../../Arsip.php';</script>";
+            }
         } else if(isset($_POST['edit'])){
             $id = $_POST['id'];
             $jenis = trim(mysqli_real_escape_string($con, $_POST['jenis']));
             $link = trim(mysqli_real_escape_string($con, $_POST['link']));
-            mysqli_query($con, "UPDATE arsipan SET jenis = '$jenis', link = '$link' WHERE ID = '$id'") or die (mysqli_error($con));
+            $query = "UPDATE arsipan SET jenis = '$jenis', link = '$link' WHERE ID = '$id'";
+            if (mysqli_query($con, $query)) {
+                echo "<script>alert('Data berhasil disimpan!');</script>";
+                echo "<script>window.location='../../Arsip.php';</script>";
+            } else {
+                echo "<script>alert('Data gagal disimpan!');</script>";
+                echo "<script>window.location='../../Arsip.php';</script>";
+            }
+        } else {
             echo "<script>window.location='../../Arsip.php';</script>";
         }
     } else{
